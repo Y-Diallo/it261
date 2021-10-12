@@ -6,7 +6,7 @@
     <main>
         <h2>About Me!</h2>
         <p>I'm Youssoupha Diallo, a running start student at Lincoln High School!<br> I play games and upload them as videos to my youtube channel Yman!</p>
-        <h3><a href=https://www.youtube.com/channel/UCPnurA7JJ71RDnHQze5dsZw>MY CHANNEL :DD</a></h3>
+        <h3><a href=https://www.youtube.com/channel/UCPnurA7JJ71RDnHQze5dsZw target="_blank">MY CHANNEL :DD</a></h3>
         <img src="/it261/profile.png" alt="whomegalul">
         <h2>My Classwork Exercises</h2>
         <h3>Week 2</h3>
