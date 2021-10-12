@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="page">
     <header>
+        <link rel="stylesheet" href="styles.css">
         <h1>My Main Assignments!</h1>
     </header>
     <main>
