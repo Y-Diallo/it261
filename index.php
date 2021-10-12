@@ -31,6 +31,6 @@
 <footer>    
     <h2>Mamp screenshots:</h2>
     <img src="/it261/images/welcomeMAMP.png" alt="welcome to mamp screenshot">
-    <img src="/it261/images/welcomeMAMP.png" alt="mamp error sceenshot">
+    <img src="/it261/images/testMAMP.png" alt="mamp error sceenshot">
 </footer>
 </html>
