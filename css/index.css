@@ -9,6 +9,7 @@ html.page {
 }
 .rightSide {
     float: left;
+    padding-left: 5%;
 }
 .leftSideBar {
     float: left;
