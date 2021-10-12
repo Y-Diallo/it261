@@ -54,9 +54,16 @@
 
     $canada = 100;
     $canada *= 0.79;
-    $canada = number_format($canada, 2);
+    $friendly_canada = number_format($canada, 2);
     echo $canada;
     echo '<br>';
-    echo '<p>I have <b>$'.$canada.'</b> American Dollars!</p>';
+    echo '<p>I have <b>$'.$friendly_canada.'</b> American Dollars!</p>';
+    echo '<br>';
+
+    $canada = 100;
+    $canada *= 0.79;
+    $friendly_canada = floor($canada);
+    echo '<br>';
+    echo '<p>I have <b>$'.$friendly_canada.'</b> American Dollars!</p>';
     echo '<br>';
 ?>
