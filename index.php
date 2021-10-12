@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en" class="page">
-<head title="Youssoupha Diallo!">
+<head>
     <link rel="stylesheet" href="index.css">
+    <title>Youssoupha Diallo</title>
 </head>
 <header>
     <h1>My Main Assignments!</h1>
