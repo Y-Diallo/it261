@@ -47,27 +47,27 @@
     <table>
         <tr>
             <th>Rubles</th>
-            <td>$<?php echo $friendly_rubles; ?></td>
+            <td><?php echo '$ '.$friendly_rubles.''; ?></td>
         </tr>
         <tr>
             <th>Pounds</th>
-            <td>$<?php echo $friendly_pounds; ?></td>
+            <td><?php echo '$ '.$friendly_pounds.''; ?></td>
         </tr>
         <tr>
             <th>Canadian</th>
-            <td>$<?php echo $friendly_canadian; ?></td>
+            <td><?php echo '$ '.$friendly_canadian.''; ?></td>
         </tr>
         <tr>
             <th>Euros</th>
-            <td>$<?php echo $friendly_euros; ?></td>
+            <td><?php echo '$ '.$friendly_euros.''; ?></td>
         </tr>
         <tr>
             <th>Yen</th>
-            <td>$<?php echo $friendly_yen; ?></td>
+            <td><?php echo '$ '.$friendly_yen.''; ?></td>
         </tr>
         <tr>
             <th>Total</th>
-            <td><strong>$<?php echo $friendly_total; ?></strong></td>
+            <td><strong><?php echo '$ '.$friendly_total.''; ?></strong></td>
         </tr>
     </table>
 </body>
