@@ -34,10 +34,29 @@
     echo '<br>';
     $friendly_money = ceil($money);
     echo $friendly_money;
+    echo '<br>';
 
     //circumference of a circle = 2*pi*r
     $radius = 10;
     $pi = 3.14;
     $circumference = 2*$pi*$radius;
-    echo $circumference
+    echo $circumference;
+    echo '<br>';
+
+    //faren = c*9/5 + 32
+    $celcius = 22;
+    $faren = $celcius*9/5 + 32;
+    $friendly_faren = floor($faren);
+    echo ''.$friendly_faren.' degrees faren';
+    echo '<br>';
+
+    //1 canadian dollars -> 0.79 american dollars
+
+    $canada = 100;
+    $canada *= 0.79;
+    $canada = number_format($canada, 2);
+    echo $canada;
+    echo '<br>';
+    echo '<p>I have <b>$'.$canada.'</b> American Dollars!</p>';
+    echo '<br>';
 ?>
