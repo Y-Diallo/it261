@@ -43,11 +43,11 @@
         </tr>
         <tr>
             <th>Canadian</th>
-            <td>$3950.00</td>
+            <td>$3,950.00</td>
         </tr>
         <tr>
             <th>Euros</th>
-            <td>$1416.00</td>
+            <td>$1,416.00</td>
         </tr>
         <tr>
             <th>Yen</th>
@@ -55,7 +55,7 @@
         </tr>
         <tr>
             <th>Total</th>
-            <td><strong>$6154.89</strong></td>
+            <td><strong>$6,154.89</strong></td>
         </tr>
     </table>
 </body>
