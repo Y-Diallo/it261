@@ -2,8 +2,10 @@
 <html class="page">
 <head>
     <link rel="stylesheet" href="index.css">
-    <h1>My Main Assignments!</h1>
 </head>
+<header>
+    <h1>My Main Assignments!</h1>
+</header>
 <body>
     <h2>About Me!</h2>
     <p>I'm Youssoupha Diallo, a running start student at Lincoln High School!<br> I play games and upload them as videos to my youtube channel Yman!</p>
@@ -21,5 +23,5 @@
     <img src="/it261/errorMAMP.png" alt="mamp error screenshot">
 </body>
 <aside></aside>
-<foot></foot>
+<footer></footer>
 </html>
