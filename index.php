@@ -11,7 +11,7 @@
     <p>paragraph about me</p>
     <h2>My Classwork Exercises</h2>
     <h3>Week 2</h3>
-    <p><a href="/weeks/week2/var.php">var.php</a></p>
+    <p><a href="/it261/weeks/week2/var.php">var.php</a></p>
     <h2>Mamp screenshots</h2>
 </main>
 <aside></aside>
