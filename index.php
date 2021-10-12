@@ -18,10 +18,6 @@
     </p>
     <h3><a href=https://www.youtube.com/channel/UCPnurA7JJ71RDnHQze5dsZw target="_blank">MY CHANNEL :DD</a></h3>
     <img src="/it261/images/profile.png" alt="whomegalul">
-    <h2>Mamp screenshots</h2>
-    <img src="/it261/images/welcomeAMP.png" alt="welcome to mamp screenshot">
-
-
 </main>
 <aside class="rightSide">
 <h2>My Classwork Exercises</h2>
@@ -32,5 +28,8 @@
     <p><a href="/it261/weeks/week2/currency.php">currency.php</a></p>
     <p><a href="/it261/weeks/week2/heredoc.php">heredoc.php</a></p>
 </aside>
-<footer></footer>
+<footer>    
+    <h2>Mamp screenshots</h2>
+    <img src="/it261/images/welcomeMAMP.png" alt="welcome to mamp screenshot">
+</footer>
 </html>
