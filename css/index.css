@@ -10,7 +10,12 @@ html.page {
 .rightSide {
     float: left;
     padding-left: 5%;
+    width: max-content;
 }
 .leftSideBar {
+    width: fit-content;
     float: left;
+}
+footer {
+    
 }
