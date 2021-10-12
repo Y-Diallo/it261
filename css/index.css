@@ -8,7 +8,7 @@ html.page {
     background-color: lightgrey;
 }
 .rightSide {
-    float: right;
+    float: left;
 }
 .leftSideBar {
     float: left;
