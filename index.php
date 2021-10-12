@@ -29,7 +29,7 @@
     <p><a href="/it261/weeks/week2/heredoc.php">heredoc.php</a></p>
 </aside>
 <footer>    
-    <h2>Mamp screenshots</h2>
+    <h2>Mamp screenshots:</h2>
     <img src="/it261/images/welcomeMAMP.png" alt="welcome to mamp screenshot">
 </footer>
 </html>
