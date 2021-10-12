@@ -19,7 +19,7 @@
     <h3><a href=https://www.youtube.com/channel/UCPnurA7JJ71RDnHQze5dsZw target="_blank">MY CHANNEL :DD</a></h3>
     <img src="/it261/images/profile.png" alt="whomegalul">
     <h2>Mamp screenshots</h2>
-    <img src="/it261/images/welcomeMAMP.png" alt="welcome to mamp screenshot">
+    <img src="/it261/images/welcomeAMP.png" alt="welcome to mamp screenshot">
 
 
 </main>
