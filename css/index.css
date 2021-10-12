@@ -9,11 +9,10 @@ html.page {
 }
 .rightSide {
     float: left;
-    padding-left: 5%;
-    width: max-content;
+    width: 75%;
 }
 .leftSideBar {
-    width: fit-content;
+    width: 25%;
     float: left;
 }
 footer {
