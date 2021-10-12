@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="page">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <h1>My Main Assignments!</h1>
 </head>
 <body>
