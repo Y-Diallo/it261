@@ -1,5 +1,5 @@
 <?php 
-    echo "hello world"
+    echo "hello world";
     $name = 'Youssoupha';
     $weather = 'Today is a sunny day';
     $body_temp = 98.6;
@@ -66,5 +66,10 @@
     $x *= .9;
     echo $x;//108
 
+
+    //function
     echo '<br>';
+    $x = 137;
+    $x /= 5;
+    echo $x;
 ?>
