@@ -1,12 +1,12 @@
 <!doctype html>
-<html class="page">
-<head>
+<html lang="en" class="page">
+<head title="Youssoupha Diallo!">
     <link rel="stylesheet" href="index.css">
 </head>
 <header>
     <h1>My Main Assignments!</h1>
 </header>
-<body>
+<main>
     <h2>About Me!</h2>
     <p>I'm Youssoupha Diallo, a running start student at Lincoln High School!<br> I play games and upload them as videos to my youtube channel Yman!</p>
     <h3><a href=https://www.youtube.com/channel/UCPnurA7JJ71RDnHQze5dsZw target="_blank">MY CHANNEL :DD</a></h3>
@@ -21,7 +21,7 @@
     <h2>Mamp screenshots</h2>
     <img src="/it261/welcomeMAMP.png" alt="welcome to mamp screenshot">
     <img src="/it261/errorMAMP.png" alt="mamp error screenshot">
-</body>
+</main>
 <aside></aside>
 <footer></footer>
 </html>
