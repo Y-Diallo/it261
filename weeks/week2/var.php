@@ -70,6 +70,82 @@
     //function
     echo '<br>';
     $x = 137;
-    $x /= 5;
-    echo $x;
+    $x /= 4;
+    $friendly_x = number_format($x, 0);//0 decimal places
+    echo $friendly_x;
+
+    echo '<br>';
+    echo date('Y');//gives year
+    echo '<br>';
+    echo date('l');// day of week
+    echo '<br>';
+
+    //arrays
+    $fruit[] = 'orange';
+    $fruit[] = 'banana';
+    $fruit[] = 'pears';
+    $fruit[] = 'apples';
+    $fruit[] = 'mangos';
+    echo '<br>';
+    echo $fruit[2];//can echo elements within an array
+    echo '<br>';
+    $fruit = array(
+        'orange',
+        'banana',
+        'pears',
+        'apples',
+        'mangos'
+    );
+    $fruit = [
+        'orange',
+        'banana',
+        'pears',
+        'apples',
+        'mangos'
+    ];
+    echo '<br>';
+    echo $fruit;//cannot directly echo arrays
+    echo '<br>';
+    print_r($fruit);//prints array
+    echo '<br>';
+    var_dump($fruit);//gives more info in print
+    echo '<br>';
+
+    //different array
+
+    $nav[] = 'Home';
+    $nav[] = 'About';
+    $nav[] = 'Daily';
+    $nav[] = 'Contact';
+    $nav[] = 'Gallery';
+    echo $nav[0];//prints "Home"
+    echo '<br>';
+
+    //associative array
+    $nav['index.php'] = 'Home';
+    $nav['about.php'] = 'About';
+    $nav['daily.php'] = 'Daily';
+    $nav['contact.php'] = 'Contact';
+    $nav['gallery.php'] = 'Gallery';
+
+    //index => key, home => value
+    //key value relation
+    $nav = array(
+        'index.php' => 'Home',
+        'about.php' => 'About',
+        'daily.php' => 'Daily',
+        'contact.php' => 'Contact',
+        'gallery.php' => 'Gallery'
+    );
+    echo '<pre>';
+    var_dump($nav);
+    echo '</pre>';
+
+    echo '<br>';
+
+    $show = 'One Piece';
+    $show_character = 'Luffy';
+    $show_genre = 'Adventure Fiction';
+
+    echo 'My favorite series during 2020 was "'.$show.'" starring, '.$show_character.', and it is a '.$show_genre.'.';
 ?>
