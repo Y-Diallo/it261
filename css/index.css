@@ -10,11 +10,9 @@ html.page {
 .rightSide {
     float: left;
     width: 75%;
+    padding-bottom: 50%;
 }
 .leftSideBar {
     width: 25%;
     float: left;
-}
-footer {
-    position: relative;
 }
