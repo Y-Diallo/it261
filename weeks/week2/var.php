@@ -147,5 +147,5 @@
     $show_character = 'Luffy';
     $show_genre = 'Adventure Fiction';
 
-    echo 'My favorite series during 2020 was "'.$show.'" starring, '.$show_character.', and it is a '.$show_genre.'.';
+    echo 'My favorite series during 2020 was "'.$show.'" starring, '.$show_character.', and it is an '.$show_genre.'.';
 ?>
