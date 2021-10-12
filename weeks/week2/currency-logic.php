@@ -15,7 +15,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Currency</title>
+<title>Currency Logic</title>
 <style>
     table {
         width: 400px;
