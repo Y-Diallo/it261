@@ -21,9 +21,11 @@
     <p><a href="/it261/weeks/week2/currency-logic.php">currency-logic.php</a></p>
     <p><a href="/it261/weeks/week2/currency.php">currency.php</a></p>
     <p><a href="/it261/weeks/week2/heredoc.php">heredoc.php</a></p>
+
+</main>
+<aside>
     <h2>Mamp screenshots</h2>
     <img src="/it261/images/welcomeMAMP.png" alt="welcome to mamp screenshot">
-</main>
-<aside></aside>
+</aside>
 <footer></footer>
 </html>
