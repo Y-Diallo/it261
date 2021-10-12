@@ -10,7 +10,7 @@ html.page {
 .rightSide {
     float: left;
     width: 75%;
-    padding-bottom: 50%;
+    padding-bottom: 10%;
 }
 .leftSideBar {
     width: 25%;
