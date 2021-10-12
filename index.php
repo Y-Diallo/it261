@@ -16,7 +16,7 @@
      I play games and upload them as videos to my youtube channel Yman!<br>
      It takes quite a bit of time and I'm getting back into the swing of it.
     </p>
-    <h3><a href=https://www.youtube.com/channel/UCPnurA7JJ71RDnHQze5dsZw target="_blank">MY CHANNEL :DD</a></h3>
+    <h3><a href=https://www.youtube.com/channel/UCPnurA7JJ71RDnHQze5dsZw target="_blank">MY CHANNEL</a></h3>
     <img src="/it261/images/profile.png" alt="whomegalul">
 </main>
 <aside class="rightSide">
@@ -31,5 +31,6 @@
 <footer>    
     <h2>Mamp screenshots:</h2>
     <img src="/it261/images/welcomeMAMP.png" alt="welcome to mamp screenshot">
+    <img src="/it261/images/welcomeMAMP.png" alt="mamp error sceenshot">
 </footer>
 </html>
