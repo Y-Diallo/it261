@@ -11,7 +11,7 @@
 
     $actor's rendition as $character is right on! Once this content is corrected, it 
     will display properly; my content is displayed in orange, and my variables are 
-    displayed in black!!! 
+    not displayed in black!!! As a matter of fact, everything is displayed in red.
     HAND;
     
     echo $content;
