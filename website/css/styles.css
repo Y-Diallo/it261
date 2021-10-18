@@ -57,7 +57,8 @@ nav a {
     background: rosybrown;
 }
 #image {
-    width: 200px;
+    width: 250px;
+    margin: auto;
 }
 main {
     width: 61.7%;
