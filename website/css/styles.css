@@ -50,7 +50,11 @@ nav a {
 #wrapper {
     max-width: 1100px;
     margin: 20px auto;
-    background: red;
+}
+#hero {
+    height: 300px;
+    margin-bottom: 20px;
+    background: rosybrown;
 }
 
 main {
