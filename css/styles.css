@@ -18,11 +18,10 @@ header {
 nav {
     height: 50px;
     background: lightgray;
+}
+nav ul {
     float: right;
 }
-/* nav ul {
-    float: right;
-} */
 nav li {
     margin-left: 20px;
     list-style-type: none;
