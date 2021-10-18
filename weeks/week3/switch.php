@@ -92,9 +92,6 @@ switch($today) {
     #image {
         height: 600px;
     }
-    p {
-        width: 600px;
-    }
 </style>
 </head>
 
