@@ -9,7 +9,26 @@ $nav['project.php'] = 'Project';
 $nav['contact.php'] = 'Contact';
 $nav['gallery.php'] = 'Gallery';
 
-
+switch(THIS_PAGE){
+    case 'index.php':
+        $title = 'Home Page';
+        break;
+    case 'about.php':
+        $title = '';
+        break;
+    case 'daily.php':
+        $title = '';
+        break;
+    case 'project.php':
+        $title = '';
+        break;
+    case 'contact.php':
+        $title = '';
+        break;
+    case 'gallery.php':
+        $title = '';
+        break;
+}
 if(isset($_GET['today'])){
     $today = $_GET['today'];
 }else {
