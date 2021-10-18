@@ -56,8 +56,9 @@
     }
 ?>
 <div id="wrapper">
-    <div class="inset">
+    
         <main>
+        <div class="inset">
         <h1><?php echo $headline;?></h1>
         <h2><?php echo $nestleWater;?></h2>
         <p><?php echo $content;?></p>
