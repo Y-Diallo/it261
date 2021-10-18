@@ -85,16 +85,21 @@ switch($today) {
 <meta charset="UTF-8">
 <title>Switch Classwork Exercise</title>
 <style>
+    #wrapper {
+        width: 940px;
+        margin: 290x auto;
+    }
     #image {
-        width: 600px;
+        height: 600px;
     }
     p {
-        width: 600px;
+        height: 200px;
     }
 </style>
 </head>
 
 <body>
+    <div id="wrapper">
     <h1>My Wonderful Switch Classwork Exercise! </h1>
     <?php 
         echo $nestleWater;
@@ -114,5 +119,6 @@ switch($today) {
     <li><a href="switch.php?today=Friday">Friday</a></li>
     <li><a href="switch.php?today=Saturday">Saturday</a></li>
     </ul>
+    </div>
 </body>
 </html>
