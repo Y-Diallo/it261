@@ -11,22 +11,28 @@ $nav['gallery.php'] = 'Gallery';
 
 switch(THIS_PAGE){
     case 'index.php':
-        $title = 'Home Page';
+        $title = 'Welcome to our Home Page';
+        $body = 'home';
         break;
     case 'about.php':
-        $title = '';
+        $title = 'Welcome to our About Page';
+        $body = 'aboutBox';
         break;
     case 'daily.php':
-        $title = '';
+        $title = 'Welcome to our Daily Page where my Homework 3 Switch will display!';
+        $body = 'dailyBox';
         break;
     case 'project.php':
-        $title = '';
+        $title = 'Welcome to our Project Page';
+        $body = 'projectBox';
         break;
     case 'contact.php':
-        $title = '';
+        $title = 'Welcome to our Contact Page';
+        $body = 'contactBox';
         break;
     case 'gallery.php':
-        $title = '';
+        $title = 'Welcome to our Gallery Page';
+        $body = 'galleryBox';
         break;
 }
 if(isset($_GET['today'])){
@@ -61,7 +67,11 @@ if(isset($_GET['today'])){
                     <ul>
                         <?php
                         foreach($nav as $key => $value) {
-                            echo '<li><a href="'.$key.'"> '.$value.'  </a></li>';
+                            if(THIS_PAGE == $key){
+                                echo '<li><a class="current" href="'.$key.'"> '.$value.'  </a></li>';
+                            }else {
+                                echo '<li><a href="'.$key.'"> '.$value.'  </a></li>';
+                            }
                         }
                         ?>
                     </ul>

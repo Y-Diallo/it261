@@ -1,0 +1,58 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    background: #ccc;
+}
+
+header{
+    overflow: hidden;
+    background: lightgray;
+}
+
+.headerBox {
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+#logo {
+    float: left;
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+nav {
+    height: 50px;
+    float: right;
+}
+
+nav ul {
+    float: right;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.current {
+    color: red;
+    font-weight: bold;
+}
+
+#wrapper {
+    max-width: 1100px;
+    margin: 20px auto;
+    background: red;
+}
+
+main {
+
+}
