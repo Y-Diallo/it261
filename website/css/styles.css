@@ -61,7 +61,8 @@ nav a {
     float: right;
 }
 .inset {
-    
+    padding-left: 20px;
+    padding-top: 20px;
 }
 main {
     width: 61.7%;
