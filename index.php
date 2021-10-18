@@ -47,7 +47,7 @@
                 <li><a href="http://jigsaw.w3.org/css-validator/check?uri=referer">CSS Validation</a></li> 
             </ul>
         </footer>
-        <div>
+        <div class="screenshots">
             <h2>Mamp screenshots:</h2>
             <img src="/it261/images/welcomeMAMP.png" alt="welcome to mamp screenshot">
             <img src="/it261/images/testMAMP.png" alt="mamp error sceenshot">
