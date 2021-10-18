@@ -20,9 +20,9 @@ nav {
     background: lightgray;
     float: right;
 }
-nav ul {
+/* nav ul {
     float: right;
-}
+} */
 nav li {
     margin-left: 20px;
     list-style-type: none;
