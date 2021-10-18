@@ -7,10 +7,12 @@
         <title>Youssoupha Diallo</title>
     </head>
     <header>
-        <h1>My Main Assignments!</h1>
-        <nav>
-            <ul><li><a href="">Home</a></li><li><a href="">Switch(3)</a></li></ul>
-        </nav>
+        <div class="headerBox">
+            <h1>My Main Assignments!</h1>
+            <nav>
+                <ul><li><a href="">Home</a></li><li><a href="">Switch(3)</a></li></ul>
+            </nav>
+        </div>
     </header>
     <div id="wrapper">
         <main class="leftSideBar">
