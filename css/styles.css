@@ -10,7 +10,7 @@ html {
 
 header {
     max-width: 1100px;
-    margin-left: 20px;
+    margin: auto;
 }
 nav {
     background: lightgray;
@@ -47,5 +47,5 @@ footer {
 }
 footer li {
     float: left;
-    
+
 }
