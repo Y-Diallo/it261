@@ -49,7 +49,7 @@ switch($today) {
 
     case 'Friday' :
         $nestleWater = '<h2>Friday is Zephyrhills Day!</h2>';
-        $pic = 'zephyrhills.jpeg';
+        $pic = 'zephyrhills.jpg';
         $alt = 'Zephyrhills';
         break;
 
