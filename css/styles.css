@@ -57,6 +57,6 @@ footer li {
     list-style-type: none;
     margin-left: 20px;
 }
-.screenshots {
+#screenshots {
     max-width: 1100px;
 }
