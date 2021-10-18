@@ -23,7 +23,7 @@ nav ul {
     float: right;
 }
 nav li {
-    margin-left: 20px;
+    margin-left: 20px auto;
     list-style-type: none;
     float: left;
 }
