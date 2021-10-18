@@ -9,10 +9,7 @@
     <header>
         <h1>My Main Assignments!</h1>
         <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Switch(3)</a></li>
-            </ul>
+            <ul><li><a href="">Home</a></li><li><a href="">Switch(3)</a></li></ul>
         </nav>
     </header>
     <div id="wrapper">
