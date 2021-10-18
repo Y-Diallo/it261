@@ -61,6 +61,17 @@
     <h1><?php echo $headline;?></h1>
     <h2><?php echo $nestleWater;?></h2>
     <p><?php echo $content;?></p>
+    <h2>Check out our Daily Specials</h2>
+
+    <ul>
+    <li><a href="switch.php?today=Sunday">Sunday</a></li>
+    <li><a href="switch.php?today=Monday">Monday</a></li>
+    <li><a href="switch.php?today=Tuesday">Tuesday</a></li>
+    <li><a href="switch.php?today=Wednesday">Wednesday</a></li>
+    <li><a href="switch.php?today=Thursday">Thursday</a></li>
+    <li><a href="switch.php?today=Friday">Friday</a></li>
+    <li><a href="switch.php?today=Saturday">Saturday</a></li>
+    </ul>
     </main>
 
     <aside>
