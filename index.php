@@ -8,9 +8,9 @@
     </head>
     <header>
         <div class="headerBox">
-            <h1>My Main Assignments!</h1>
+            <h1>My Portal Page!</h1>
             <nav>
-                <ul><li><a href="">Home</a></li><li><a href="">Switch(3)</a></li></ul>
+                <ul><li><a href="website/index.php">Home</a></li><li><a href="website/">Switch(3)</a></li></ul>
             </nav>
         </div>
     </header>
