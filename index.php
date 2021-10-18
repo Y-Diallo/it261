@@ -39,7 +39,7 @@
         
         <footer>
             <ul>
-                <li>Copyright &copy; 2021</li>
+                <li>Copyright &copy; 2021-<?php echo date('Y');?></li>
                 <li>All Rights Reserved</li>
                 <li><a href=""></a>Terms of use</li>
                 <li><a href=""></a>Web Design by Youssoupha</li>

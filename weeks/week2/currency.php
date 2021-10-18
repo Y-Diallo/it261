@@ -33,7 +33,7 @@
         width: 400px;
         margin: 20px auto;
         border: 1px solid green;
-        border-collapse = collapse;
+        border-collapse: collapse;
     }
     td, th {
         border: 1px solid green;
