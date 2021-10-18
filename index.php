@@ -42,10 +42,13 @@
         </aside>
         
         <footer>
-        <h3>Validation!</h3>
             <ul>
-                <li><a href="http://validator.w3.org/check?uri=referer">HTML</a></li>
-                <li><a href="http://jigsaw.w3.org/css-validator/check?uri=referer">CSS</a></li> 
+                <li>Copyright &copy; 2021</li>
+                <li>All Rights Reserved</li>
+                <li><a href=""></a>Terms of use</li>
+                <li><a href=""></a>Web Design by Youssoupha</li>
+                <li><a href="http://validator.w3.org/check?uri=referer">HTML Validation</a></li>
+                <li><a href="http://jigsaw.w3.org/css-validator/check?uri=referer">CSS Validation</a></li> 
             </ul>
         </footer>
         <div>

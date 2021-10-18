@@ -45,3 +45,7 @@ footer {
     border-top: 1px dotted #666;
     clear: both;
 }
+footer li {
+    float: left;
+    
+}
