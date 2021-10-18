@@ -57,12 +57,13 @@ nav a {
     background: rosybrown;
 }
 #image {
-    width: 30%;
-    padding-right: 35% auto;
+    width: 50%;
+    padding-right: 35%;
+    padding-top: 35%;
     float: right;
 }
 .inset {
-    float:left;
+    
 }
 main {
     width: 61.7%;
