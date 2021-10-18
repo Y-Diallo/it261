@@ -57,9 +57,9 @@ footer li {
     list-style-type: none;
     margin-left: 20px;
 }
-.mampScreenshot {
+#mampScreenshot {
     max-width: 1100px;
 }
-.errorScreenshot {
+#errorScreenshot {
     width: 1100px;
 }
