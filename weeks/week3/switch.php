@@ -1,11 +1,11 @@
 <?php 
 
-//$variable = 'bonk';
-if(isset($variable)){
-    echo 'yip';
-}else {
-    echo 'nop';
-}
+// //$variable = 'bonk';
+// if(isset($variable)){
+//     echo 'yip';
+// }else {
+//     echo 'nop';
+// }
 
 
 if(isset($_GET['today'])){
