@@ -60,7 +60,7 @@
         <main>
         <div class="inset">
         <h1><?php echo $headline;?></h1>
-        <h2><?php echo $nestleWater;?></h2>
+        <?php echo $nestleWater;?>
         <p><?php echo $content;?></p>
         
         <h2>Check out our Daily Specials</h2>
