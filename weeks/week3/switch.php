@@ -87,13 +87,13 @@ switch($today) {
 <style>
     #wrapper {
         width: 940px;
-        margin: 290x auto;
+        margin: 20px auto;
     }
     #image {
         height: 600px;
     }
     p {
-        height: 200px;
+        width: 600px;
     }
 </style>
 </head>
