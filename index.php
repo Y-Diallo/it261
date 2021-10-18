@@ -34,7 +34,11 @@
             <p><a href="/it261/weeks/week2/currency.php">currency.php</a></p>
             <p><a href="/it261/weeks/week2/heredoc.php">heredoc.php</a></p>
             <h3>Week 3</h3>
-            <p><a href="/it261/weeks/week3/var.php">var.php</a></p>
+            <p><a href="/it261/weeks/week3/if.php">if.php</a></p>
+            <p><a href="/it261/weeks/week3/foreach.php">foreach.php</a></p>
+            <p><a href="/it261/weeks/week3/forloop.php">forloop.php</a></p>
+            <p><a href="/it261/weeks/week3/date.php">date.php</a></p>
+            <p><a href="/it261/weeks/week3/switch.php">switch.php</a></p>
         </aside>
         
         <footer>

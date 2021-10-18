@@ -1,74 +1,85 @@
 <?php 
-    //1 ruble = 0.013 dollars
-    //1 pound sterling = 1.28 dollars
-    //1 canadian dollar = 0.79 dollars
-    //1 euro = 1.18 dollars
-    //1 yen = 0.0094 dollars
 
-    $rubles = 10007;
-    $rubles *= 0.013;
-    $friendly_rubles = number_format($rubles, 2);
-    $pounds = 500;
-    $pounds *= 1.28;
-    $friendly_pounds = number_format($pounds, 2);
-    $canadian = 5000;
-    $canadian *= 0.79;
-    $friendly_canadian = number_format($canadian, 2);
-    $euros = 1200;
-    $euros *= 1.18;
-    $friendly_euros = number_format($euros, 2);
-    $yen = 2000;
-    $yen *= 0.0094;
-    $friendly_yen = number_format($yen, 2);
-    $total = $rubles + $pounds + $canadian + $euros + $yen;
-    $friendly_total = number_format($total, 2);
+//$variable = 'bonk';
+if(isset($variable)){
+    echo 'yip';
+}else {
+    echo 'nop';
+}
+
+
+if(isset($_GET['today'])){
+    $today = $_GET['today'];
+}else {
+    $today = date('l');
+}
+
+//switch
+
+switch($today) {
+    case 'Sunday' :
+        $nestleWater = '<h2>Sunday is Arrowhead Day!</h2>';
+        $pic = 'arrowhead.jpeg';
+        $alt = 'Arrowhead';
+        break;
+
+    case 'Monday' :
+        $nestleWater = '<h2>Monday is Poland Spring Day!</h2>';
+        $pic = 'polandSpring.jpeg';
+        $alt = 'Poland Spring';
+        break;
+
+    case 'Tuesday' :
+        $nestleWater = '<h2>Tuesday is Ozarka Day!</h2>';
+        $pic = 'ozarka.jpeg';
+        $alt = 'Ozarka';
+        break;
+
+    case 'Wednesday' :
+        $nestleWater = '<h2>Wednesday is Ice Mountain Day!</h2>';
+        $pic = 'iceMountain.jpeg';
+        $alt = 'Ice Mountain';
+        break;
+
+    case 'Thursday' :
+        $nestleWater = '<h2>Thursday is Deer Park Day!</h2>';
+        $pic = 'deerPark.jpeg';
+        $alt = 'Deer Park';
+        break;
+
+    case 'Friday' :
+        $nestleWater = '<h2>Friday is Zephyrhills Day!</h2>';
+        $pic = 'zephyrhills.jpeg';
+        $alt = 'Zephyrhills';
+        break;
+
+    case 'Saturday' :
+        $nestleWater = '<h2>Saturday is Nestle Pure Life Day!</h2>';
+        $pic = 'nestlePureLife.jpeg';
+        $alt = 'Nestle Pure Life';
+        break;
+
+    case '':
+        break;
+}
 ?>
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Currency</title>
+<title>Switch Classwork Exercise</title>
 <style>
-    table {
-        width: 400px;
-        margin: 20px auto;
-        border: 1px solid green;
-        border-collapse = collapse;
-    }
-    td, th {
-        border: 1px solid green;
-        padding: 5px;
-        text-align: left;
+    #image {
+        width: 600px;
     }
 </style>
 </head>
 
 <body>
-    <table>
-        <tr>
-            <th>Rubles</th>
-            <td><?php echo '$ '.$friendly_rubles.''; ?></td>
-        </tr>
-        <tr>
-            <th>Pounds</th>
-            <td><?php echo '$ '.$friendly_pounds.''; ?></td>
-        </tr>
-        <tr>
-            <th>Canadian</th>
-            <td><?php echo '$ '.$friendly_canadian.''; ?></td>
-        </tr>
-        <tr>
-            <th>Euros</th>
-            <td><?php echo '$ '.$friendly_euros.''; ?></td>
-        </tr>
-        <tr>
-            <th>Yen</th>
-            <td><?php echo '$ '.$friendly_yen.''; ?></td>
-        </tr>
-        <tr>
-            <th>Total</th>
-            <td><strong><?php echo '$ '.$friendly_total.''; ?></strong></td>
-        </tr>
-    </table>
+    <h1>My Wonderful Switch Classwork Exercise! </h1>
+    <?php 
+        echo $nestleWater;
+    ?>
+    <img id="image" src="images/<?php echo $pic; ?>" alt="<?php echo $alt; ?>">
 </body>
 </html>
