@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="page">
 <head>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0" >
     <title>Youssoupha Diallo</title>
@@ -27,6 +27,8 @@
     <p><a href="/it261/weeks/week2/currency-logic.php">currency-logic.php</a></p>
     <p><a href="/it261/weeks/week2/currency.php">currency.php</a></p>
     <p><a href="/it261/weeks/week2/heredoc.php">heredoc.php</a></p>
+    <h3>Week 3</h3>
+    <p><a href="/it261/weeks/week3/var.php">var.php</a></p>
     <h3>Validation!</h3>
     <li><a href="http://validator.w3.org/check?uri=referer">HTML</a></li>
     <li><a href="http://jigsaw.w3.org/css-validator/check?uri=referer">CSS</a></li>
