@@ -4,15 +4,36 @@
     box-sizing: border-box;
 }
 
-html.page {
+body {
     background-color: lightgrey;
 }
-.rightSide {
-    float: left;
-    width: 75%;
-    padding-bottom: 13%;
+
+header {
+    overflow: hidden;
+    background: tan;
 }
-.leftSideBar {
-    width: 25%;
+
+.headerBox {
+    max-width: 1100px;
+    margin:20px auto;
+}
+
+#logo {
     float: left;
+}
+nav {
+    height: 50px;
+    float: right;
+}
+
+nav ul {
+    float: right;
+}
+nav li {
+    float: left;
+    list-style-type: none;
+    margin-left: 30px;
+}
+nav a {
+    text-decoration: none;
 }
