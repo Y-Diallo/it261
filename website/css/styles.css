@@ -57,8 +57,11 @@ nav a {
     background: rosybrown;
 }
 #image {
-    width: 250px;
-    margin: auto;
+    width: 300px;
+    float:right;
+}
+.inset {
+    margin-left: 20px auto;
 }
 main {
     width: 61.7%;
