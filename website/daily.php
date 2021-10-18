@@ -59,7 +59,7 @@
     
         <main>
         <div class="inset">
-        <h1><?php echo $headline;?></h1>
+        <h1><?php echo $headline;?><br></h1>
         <?php echo $nestleWater;?>
         <p><?php echo $content;?></p>
         
