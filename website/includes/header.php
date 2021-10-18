@@ -11,28 +11,34 @@ $nav['gallery.php'] = 'Gallery';
 
 switch(THIS_PAGE){
     case 'index.php':
-        $title = 'Welcome to our Home Page';
+        $title = 'Home Page';
         $body = 'home';
+        $headline = 'Welcome to our Home Page';
         break;
     case 'about.php':
-        $title = 'Welcome to our About Page';
+        $title = 'About Page';
         $body = 'aboutBox';
+        $headline = 'Welcome to our About Page';
         break;
     case 'daily.php':
-        $title = 'Welcome to our Daily Page where my Homework 3 Switch will display!';
+        $title = 'Daily Page';
         $body = 'dailyBox';
+        $headline = 'Welcome to our Daily Page where my Homework 3 Switch will display!';
         break;
     case 'project.php':
-        $title = 'Welcome to our Project Page';
+        $title = 'Project Page';
         $body = 'projectBox';
+        $headline = 'Welcome to our Project Page';
         break;
     case 'contact.php':
-        $title = 'Welcome to our Contact Page';
+        $title = 'Contact Page';
         $body = 'contactBox';
+        $headline = 'Welcome to our Contact Page';
         break;
     case 'gallery.php':
-        $title = 'Welcome to our Gallery Page';
+        $title = 'Gallery Page';
         $body = 'galleryBox';
+        $headline = 'Welcome to our Gallery Page';
         break;
 }
 if(isset($_GET['today'])){
