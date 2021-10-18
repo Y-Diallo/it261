@@ -10,7 +10,7 @@ html {
 
 header {
     max-width: 1100px;
-    margin: auto;
+    margin-left: 20px auto;
 }
 nav {
     background: lightgray;
