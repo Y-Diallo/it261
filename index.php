@@ -49,8 +49,8 @@
         </footer>
         <div>
             <h2>Mamp screenshots:</h2>
-            <img id="screenshots" src="/it261/images/welcomeMAMP.png" alt="welcome to mamp screenshot">
-            <img id="screenshots" src="/it261/images/testMAMP.png" alt="mamp error sceenshot">
+            <img id="mampScreenshot" src="/it261/images/welcomeMAMP.png" alt="welcome to mamp screenshot">
+            <img id="errorScreenshot" src="/it261/images/testMAMP.png" alt="mamp error sceenshot">
         </div>
     </div>
 </html>
