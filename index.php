@@ -36,9 +36,6 @@
             <p><a href="/it261/weeks/week2/heredoc.php">heredoc.php</a></p>
             <h3>Week 3</h3>
             <p><a href="/it261/weeks/week3/var.php">var.php</a></p>
-            <h3>Validation!</h3>
-            <li><a href="http://validator.w3.org/check?uri=referer">HTML</a></li>
-            <li><a href="http://jigsaw.w3.org/css-validator/check?uri=referer">CSS</a></li>
         </aside>
         
         <footer>
