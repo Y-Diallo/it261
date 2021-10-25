@@ -43,6 +43,12 @@
             <p><a href="/it261/weeks/week3/forloop.php">forloop.php</a></p>
             <p><a href="/it261/weeks/week3/date.php">date.php</a></p>
             <p><a href="/it261/weeks/week3/switch.php">switch.php</a></p>
+            <h3>Week 4</h3>
+            <p><a href="/it261/weeks/week4/form1.php">form1.php</a></p>
+            <p><a href="/it261/weeks/week4/form2.php">form2.php</a></p>
+            <p><a href="/it261/weeks/week4/form3.php">form3.php</a></p>
+            <p><a href="/it261/weeks/week4/form-arithmetic.php">form-arithmetic.php</a></p>
+            <p><a href="/it261/weeks/week4/celcius.php">celcius.php</a></p>
         </aside>
         
         <footer>
