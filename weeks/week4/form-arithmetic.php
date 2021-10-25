@@ -69,10 +69,14 @@
     if(isset($_POST['fname'],$_POST['coffees'], $_POST['lattes'], $_POST['caps'])){
         $fname = $_POST['fname'];
         $coffees = $_POST['coffees'];
+        $int_coffees = intval($coffees);
         $lattes = $_POST['lattes'];
+        $int_lattes = intval($lattes);
         $caps = $_POST['caps'];
+        $int_caps = intval($caps);
         
-        $total = $coffees + $lattes + $caps;
+        $total = $int_coffees + $int_lattes + $int_caps;
+
         if(empty($fname && $coffees && $lattes && $caps)){
             //failcase
             echo '<h3>Please fill out the fields!</h3>';
@@ -85,9 +89,9 @@
                 <h2>Hello '.$fname.'</h2>
                 <p>You have ordered the following:</p>
                 <ul>
-                    <li>'.$coffees.' Coffees</li>
-                    <li>'.$lattes.' Lattes</li>
-                    <li>'.$caps.' Cappucinos</li>
+                    <li>'.$int_coffees.' Coffees</li>
+                    <li>'.$int_lattes.' Lattes</li>
+                    <li>'.$int_caps.' Cappucinos</li>
                 </ul>
                 <p>Totalling '.$total.' beverages!</p>
             </div>
