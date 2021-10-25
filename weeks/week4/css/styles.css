@@ -15,6 +15,7 @@ form {
 
 fieldset {
     border: 1px solid red;
+    padding: 12px;
 }
 
 legend {
@@ -25,7 +26,7 @@ legend {
 
 label {
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     display: block;
 }
 
