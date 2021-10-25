@@ -38,7 +38,7 @@
 </head>
 <body>
 <h1>Adder.php</h1> 
-<form action method="post"><!--incorrect opening tag for form, needs method="post"-->
+<form action="" method="post"><!--incorrect opening tag for form, needs method="post"-->
     <label>Enter the first number:</label>
     <input type="text" name="num1"><br><!--bad capitlization on num1-->
     <label>Enter the second number:</label>

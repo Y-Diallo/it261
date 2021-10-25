@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: #ddd;
+}
+
+form {
+    width: 400px;
+    margin: 30px auto;
+}
+
+fieldset {
+    border: 1px solid red;
+}
+
+legend {
+    font-size: 1.2em;
+    font-style: italic;
+    color: blueviolet;
+}
+
+label {
+    color: #333;
+}
