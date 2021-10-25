@@ -26,24 +26,25 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $cel = $_POST['cel'];
         $cel_int = intval($cel);
         $far = ($cel_int * 9/5) + 32;
+        $friendly_far = number_format($far, 0);
         if($cel == NULL){
-            echo 'Please fill out your Celcius Value';
-        }elseif($far <= 32){
-            echo ' '.$far.' degrees and it is pretty cold!';
-        }elseif($far <= 40){
-            echo ' '.$far.' degrees and it is not as cold!';
-        }elseif($far <= 50){
-            echo ' '.$far.' degrees and it is getting warmer!';
-        }elseif($far <= 60){
-            echo ' '.$far.' degrees and I\'m liking it!';
-        }elseif($far <= 70){
-            echo ' '.$far.' degrees and I\'m really liking it!';
-        }elseif($far <= 80){
-            echo ' '.$far.' degrees and I\'m going swimming!';
-        }elseif($far <= 95){
-            echo ' '.$far.' degrees and it is getting hot!';
+            echo '<h2>Please fill out your Celcius Value</h2>';
+        }elseif($friendly_far <= 32){
+            echo '<p> '.$friendly_far.' degrees and it is pretty cold!</p>';
+        }elseif($friendly_far <= 40){
+            echo '<p> '.$friendly_far.' degrees and it is not as cold!</p>';
+        }elseif($friendly_far <= 50){
+            echo '<p> '.$friendly_far.' degrees and it is getting warmer!</p>';
+        }elseif($friendly_far <= 60){
+            echo '<p> '.$friendly_far.' degrees and I\'m liking it!</p>';
+        }elseif($friendly_far <= 70){
+            echo '<p> '.$friendly_far.' degrees and I\'m really liking it!</p>';
+        }elseif($friendly_far <= 80){
+            echo '<p> '.$friendly_far.' degrees and I\'m going swimming!</p>';
+        }elseif($friendly_far <= 95){
+            echo '<p> '.$friendly_far.' degrees and it is getting hot!</p>';
         }else{
-            echo ' '.$far.' degrees and it is burning!';
+            echo '<p> '.$friendly_far.' degrees and it is burning!</p>';
         }
     }
 }

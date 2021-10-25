@@ -25,4 +25,21 @@ legend {
 
 label {
     color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: red;
+    font-style: italic;
+}
+
+p {
+    text-align: center;
 }
