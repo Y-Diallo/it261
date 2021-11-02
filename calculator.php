@@ -92,8 +92,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $gallons = $miles/$MPG;
         $total = $gallons*$price;
         $friendly_total = @number_format($total, 2);
-        $totalHours = $miles/$speed;
-        $friendly_hours = ceil($hours);
+        $totalTime = $miles/$speed;
+        $friendly_time = ceil($totalTime);
         $days = $totalHours/$hours;
         $friendly_days = ceil($days);
         
@@ -104,7 +104,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             <p> '.$name.', you will be driving <b>'.$miles.' miles</b><br>
             Your vehicle has an efficieny rating of <b>'.$MPG.' miles per gallon</b>
             Your total cost for gas will be <b>$'.$friendly_total.' dollars</b>
-            You will be driving a total of <b>'.$friendly_hours.' hours equating to '.$friendly_days.' days</b>
+            You will be driving a total of <b>'.$friendly_time.' hours equating to '.$friendly_days.' days</b>
             </p>
             
         </div>';
