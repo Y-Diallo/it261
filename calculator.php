@@ -75,8 +75,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     if($_POST['MPG'] == NULL){
         echo '<span class="error">Please select your MPG!</span>';
     }
+    if(!empty($_POST['miles']) && !is_numeric($_POST['miles'])){
+        echo '<span class="error">Please fill out a valid miles value!</span>';
+    }
+    if(!empty($_POST['hours']) && !is_numeric($_POST['hours'])){
+        echo '<span class="error">Please fill out a valid hours value!</span>';
+    }
     
-    if(isset($_POST['name'],$_POST['miles'],$_POST['hours'],$_POST['price']) && is_numeric($_POST['hours'])){
+    if(isset($_POST['name'],$_POST['miles'],$_POST['hours'],$_POST['price']) && is_numeric($_POST['hours'])&& is_numeric($_POST['miles'])){
         $name = $_POST['name'];
         $miles = $_POST['miles'];
         $hours = $_POST['hours'];
