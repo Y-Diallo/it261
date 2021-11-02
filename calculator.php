@@ -14,16 +14,13 @@
 " method="POST">
     <fieldset>
         <label for="name">Name</label>
-        <input type="text" name="name" value="
-        <?php if(isset($_POST['name'])){ echo htmlspecialchars($_POST['name']);} ?>">
+        <input type="text" name="name" value="<?php if(isset($_POST['name'])){ echo htmlspecialchars($_POST['name']);} ?>">
 
         <label for="miles">How many miles?</label>
-        <input type="text" name="miles" value="
-        <?php if(isset($_POST['miles'])){ echo htmlspecialchars($_POST['miles']);} ?>">
+        <input type="text" name="miles" value="<?php if(isset($_POST['miles'])){ echo htmlspecialchars($_POST['miles']);} ?>">
 
         <label for="hours">How many hours per day?</label>
-        <input type="text" name="hours" value="
-        <?php if(isset($_POST['hours'])){ echo htmlspecialchars($_POST['hours']);} ?>">
+        <input type="text" name="hours" value="<?php if(isset($_POST['hours'])){ echo htmlspecialchars($_POST['hours']);} ?>">
 
         <label for="price">How much is your gas?</label>
         <ul>
@@ -56,8 +53,8 @@
             <?php if(isset($_POST['MPG']) && $_POST['MPG'] == '40'){ echo 'selected="selected"';}?>
               >Great</option>
         </select>
-        <input type="submit" value="Calculate!">
-        <p><a href="">Reset</a></p>
+        <input type="submit" value="Calculate!" class="button">
+        <p><a href="" class="button">Reset</a></p>
     </fieldset>
 </form>
 <?php 

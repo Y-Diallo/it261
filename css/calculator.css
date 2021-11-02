@@ -37,6 +37,11 @@ label {
     color: red;
     font-style: italic;
 }
+h1 {
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
 form ul {
     margin-left: 10px;
     margin-bottom: 10px;
@@ -58,10 +63,7 @@ input[type=radio]{
     color: red;
     font-style: italic;
     border: 2px solid gray;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 3px 8px;
 }
 
 select {
@@ -69,3 +71,15 @@ select {
     margin-bottom: 5px;
 
 }
+
+.button {
+    background-color: #cedfcf;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+  }
