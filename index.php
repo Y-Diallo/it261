@@ -14,6 +14,7 @@
                     <li><a href="website/index.php">Home</a></li>
                     <li><a href="website/daily.php">Switch(3)</a></li>
                     <li><a href="adder.php">Adder(4)</a></li>
+                    <li><a href="calculator.php">Calculating Form(4)</a></li>
                 </ul>
             </nav>
         </div>
@@ -49,6 +50,12 @@
             <p><a href="/it261/weeks/week4/form3.php">form3.php</a></p>
             <p><a href="/it261/weeks/week4/form-arithmetic.php">form-arithmetic.php</a></p>
             <p><a href="/it261/weeks/week4/celcius.php">celcius.php</a></p>
+            <h3>Week 5</h3>
+            <p><a href="/it261/weeks/week5/currency1.php">currency1.php</a></p>
+            <p><a href="/it261/weeks/week5/currency2.php">currency2.php</a></p>
+            <p><a href="/it261/weeks/week5/currency3.php">currency3.php</a></p>
+            <p><a href="/it261/weeks/week5/currency4.php">currency4.php</a></p>
+            <p><a href="/it261/weeks/week5/null.php">null.php</a></p>
         </aside>
         
         <footer>
