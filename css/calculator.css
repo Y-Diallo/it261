@@ -63,7 +63,9 @@ input[type=radio]{
     color: red;
     font-style: italic;
     border: 2px solid gray;
-    padding: 3px 8px;
+    padding: 10px 20px;
+    width: 350px;
+    background-color: #ccc;
 }
 
 select {
@@ -73,9 +75,9 @@ select {
 }
 
 .button {
-    background-color: #cedfcf;
+    background-color: #ccc;
     border: none;
-    color: white;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
