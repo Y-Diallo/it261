@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Currency Form #4 EC!</title>
-<link href="css/calculator.css" type="text/css" rel="stylesheet">
+<link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>

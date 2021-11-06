@@ -58,3 +58,27 @@ select {
     margin-bottom: 5px;
 
 }
+
+.veryhappy{
+    width: 500px;
+    background: greenyellow;
+    margin: 10px auto;
+    border: 2px solid green;
+    padding: 8px;
+}
+
+.happy{
+    width: 500px;
+    background: yellow;
+    margin: 10px auto;
+    border: 2px solid green;
+    padding: 8px;
+}
+
+.sad{
+    width: 500px;
+    background: lightsalmon;
+    margin: 10px auto;
+    border: 2px solid green;
+    padding: 8px;
+}
