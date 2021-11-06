@@ -82,3 +82,7 @@ select {
     border: 2px solid blue;
     padding: 8px;
 }
+
+iframe {
+    margin: auto;
+}

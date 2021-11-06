@@ -95,7 +95,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         if($dollars > 1000){
             echo '
             <div class="veryhappy">
-                <h2>I am <b>very</b> happy because I have '.$friendly_dollars.' dollars</h2>
+                <h2>I am <b>very</b> happy because I have '.$friendly_dollars.' dollars and you are watching the muppets</h2>
                 <iframe width="420" height="315"
                     src="https://www.youtube.com/embed/tgbNymZ7vqY">
                 </iframe>
@@ -104,18 +104,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         }elseif($dollars > 100){
             echo '
             <div class="happy">
-                <h2>I am happy because I have '.$friendly_dollars.' dollars</h2>
+                <h2>I am happy like these cats because I have '.$friendly_dollars.' dollars</h2>
                 <iframe width="420" height="315"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    src="https://www.youtube.com/embed/6piJRdcA9kA">
                 </iframe>
             </div>
             ';//add video and styles
         }else{
             echo '
             <div class="sad">
-                <h2>I am sad because I have '.$friendly_dollars.' dollars</h2>
+                <h2>I am sad like this dog because I have '.$friendly_dollars.' dollars</h2>
                 <iframe width="420" height="315"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    src="https://www.youtube.com/embed/A71Ff2cSqGg">
                 </iframe>
             </div>
             ';//add video and styles
