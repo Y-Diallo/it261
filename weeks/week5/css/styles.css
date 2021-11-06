@@ -63,7 +63,7 @@ select {
     width: 500px;
     background: greenyellow;
     margin: 10px auto;
-    border: 2px solid green;
+    border: 2px solid red;
     padding: 8px;
 }
 
@@ -79,6 +79,6 @@ select {
     width: 500px;
     background: lightsalmon;
     margin: 10px auto;
-    border: 2px solid green;
+    border: 2px solid blue;
     padding: 8px;
 }
