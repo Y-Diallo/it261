@@ -92,7 +92,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         
         $friendly_dollars = number_format($dollars);
 
-        if($friendly_dollars > 1000){
+        if($dollars > 1000){
             echo '
             <div class="veryhappy">
                 <h2>I am <b>very</b> happy because I have '.$friendly_dollars.' dollars</h2>
@@ -101,7 +101,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 </iframe>
             </div>
             ';//add video and styles
-        }elseif($friendly_dollars > 100){
+        }elseif($dollars > 100){
             echo '
             <div class="happy">
                 <h2>I am happy because I have '.$friendly_dollars.' dollars</h2>
