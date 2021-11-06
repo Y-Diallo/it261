@@ -91,11 +91,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $speed = 65;//65 mph
         $gallons = $miles/$MPG;
         $total = $gallons*$price;
-        $friendly_total = @number_format($total, 2);
+        $friendly_total = number_format($total, 2);
         $totalTime = $miles/$speed;// miles/mph = h
-        $friendly_time = ceil($totalTime);
+        $friendly_time = number_format($totalTime);
         $days = $totalHours/$hours;//total time traveled over time per day
-        $friendly_days = ceil($days);
+        $friendly_days = number_format($days);
         
         
         echo '

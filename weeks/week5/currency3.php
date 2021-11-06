@@ -23,20 +23,15 @@
         <?php if(isset($_POST['money'])){ echo htmlspecialchars($_POST['money']);} ?>">
         <label for="currency">Choose your currency</label>
         <ul>
-            <li><input type="radio" id="rubles" name="currency" value="0.013"
-            <?php if(isset($_POST['currency']) && $_POST['currency'] == '0.013'){ echo 'checked="checked"';}?>
+            <li><input type="radio" id="rubles" name="currency" value="0.013"<?php if(isset($_POST['currency']) && $_POST['currency'] == '0.013'){ echo 'checked="checked"';}?>
             >Rubles</li>
-            <li><input type="radio" id="canadian" name="currency" value="0.76"
-            <?php if(isset($_POST['currency']) && $_POST['currency'] == '0.76'){ echo 'checked="checked"';}?>
+            <li><input type="radio" id="canadian" name="currency" value="0.76"<?php if(isset($_POST['currency']) && $_POST['currency'] == '0.76'){ echo 'checked="checked"';}?>
             >Canadian</li>
-            <li><input type="radio" id="pounds" name="currency" value="1.28"
-            <?php if(isset($_POST['currency']) && $_POST['currency'] == '1.28'){ echo 'checked="checked"';}?>
+            <li><input type="radio" id="pounds" name="currency" value="1.28"<?php if(isset($_POST['currency']) && $_POST['currency'] == '1.28'){ echo 'checked="checked"';}?>
             >Pounds</li>
-            <li><input type="radio" id="euros" name="currency" value="1.18"
-            <?php if(isset($_POST['currency']) && $_POST['currency'] == '1.18'){ echo 'checked="checked"';}?>
+            <li><input type="radio" id="euros" name="currency" value="1.18"<?php if(isset($_POST['currency']) && $_POST['currency'] == '1.18'){ echo 'checked="checked"';}?>
             >Euros</li>
-            <li><input type="radio" id="yen" name="currency" value="0.0094"
-            <?php if(isset($_POST['currency']) && $_POST['currency'] == '0.0094'){ echo 'checked="checked"';}?>
+            <li><input type="radio" id="yen" name="currency" value="0.0094"<?php if(isset($_POST['currency']) && $_POST['currency'] == '0.0094'){ echo 'checked="checked"';}?>
             >Yen</li>
         </ul>
 
@@ -92,7 +87,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $bank = $_POST['bank'];
         $dollars = $money*$currency;
         
-        $friendly_dollars = floor($dollars);
+        $friendly_dollars = number_format($dollars);
         echo '
         <div class="box">
             <h2>Hello'.$name.'</h2>

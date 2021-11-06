@@ -14,14 +14,11 @@
 " method="POST">
     <fieldset>
         <label for="name">Name</label>
-        <input type="text" name="name" value="
-        <?php if(isset($_POST['name'])){ echo htmlspecialchars($_POST['name']);} ?>">
+        <input type="text" name="name" value="<?php if(isset($_POST['name'])){ echo htmlspecialchars($_POST['name']);} ?>">
         <label for="email">Email</label>
-        <input type="text" name="email" value="
-        <?php if(isset($_POST['email'])){ echo htmlspecialchars($_POST['email']);} ?>">
+        <input type="text" name="email" value="<?php if(isset($_POST['email'])){ echo htmlspecialchars($_POST['email']);} ?>">
         <label for="money">How much money do you have?</label>
-        <input type="text" name="money" value="
-        <?php if(isset($_POST['money'])){ echo htmlspecialchars($_POST['money']);} ?>">
+        <input type="text" name="money" value="<?php if(isset($_POST['money'])){ echo htmlspecialchars($_POST['money']);} ?>">
         <label for="currency">Choose your currency</label>
         <ul>
             <li><input type="radio" id="rubles" name="currency" value="0.013"
@@ -93,32 +90,33 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $bank = $_POST['bank'];
         $dollars = $money*$currency;
         
-        $friendly_dollars = floor($dollars);
-        echo '
-        <div class="box">
-            <h2>Hello'.$name.'</h2>
-            <p> You now have $'.$friendly_dollars.
-            ' USD, and it will be deposited in <b>'.$bank.'</b> and we will be sending you an email at: <b>'.$email.'</b> in the next 24hours!</p><br>
-            
-        </div>';
+        $friendly_dollars = number_format($dollars);
 
-        
         if($friendly_dollars > 1000){
             echo '
             <div class="veryhappy">
                 <h2>I am <b>very</b> happy because I have'.$friendly_dollars.'</h2>
+                <iframe width="420" height="315"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
             </div>
             ';//add video and styles
         }elseif($friendly_dollars > 100){
             echo '
             <div class="happy">
                 <h2>I am happy because I have'.$friendly_dollars.'</h2>
+                <iframe width="420" height="315"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
             </div>
             ';//add video and styles
         }else{
             echo '
             <div class="sad">
                 <h2>I am sad because I have'.$friendly_dollars.'</h2>
+                <iframe width="420" height="315"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
             </div>
             ';//add video and styles
         }
