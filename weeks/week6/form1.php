@@ -157,13 +157,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <?php echo $regions_Err?>
 
         <label for="comments">Comments</label>
-        <textarea name="comments" value="<?php if(isset($_POST['comments'])){ echo htmlspecialchars($_POST['comments']);} ?>"></textarea>
+        <textarea name="comments"><?php if(isset($_POST['comments'])){ echo htmlspecialchars($_POST['comments']);} ?></textarea>
         <?php echo $comments_Err?>
 
         <label for="privacy">Privacy</label>
         <ul>
             <li><input type="radio" id="agreed" name="privacy" value="agreed"
-            <?php if(isset($_POST['privacy']) && $_POST['price'] == 'agreed'){ echo 'checked="checked"';}?>
+            <?php if(isset($_POST['privacy']) && $_POST['privacy'] == 'agreed'){ echo 'checked="checked"';}?>
             ><label for="agreed">I agree!</label></li>
         </ul>
         <?php echo $privacy_Err?>
