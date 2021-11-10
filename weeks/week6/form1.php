@@ -168,7 +168,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         </ul>
         <?php echo $privacy_Err?>
 
-        <input type="submit" value="Convert!">
+        <input type="submit" value="Submit!">
         <p><a href="">Reset</a></p>
     </fieldset>
 </form>
