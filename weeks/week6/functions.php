@@ -1,89 +1,67 @@
-
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Currency Form #2</title>
-<link href="css/styles.css" type="text/css" rel="stylesheet">
-</head>
-
-<body>
-<form action="
-<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>
-" method="POST">
-    <fieldset>
-        <label for="name">Name</label>
-        <input type="text" name="name">
-        <label for="email">Email</label>
-        <input type="text" name="email">
-        <label for="money">How much money do you have?</label>
-        <input type="number" name="money">
-        <label for="currency">Choose your currency</label>
-        <ul>
-            <li><input type="radio" id="rubles" name="currency" value="0.013">
-            <label for="rubles">Rubles</label></li>
-            <li><input type="radio" id="canadian" name="currency" value="0.76">
-            <label for="canadian">Canadian</label></li>
-            <li><input type="radio" id="pounds" name="currency" value="1.28">
-            <label for="pounds">Pounds</label></li>
-            <li><input type="radio" id="euros" name="currency" value="1.18">
-            <label for="euros">Euros</label></li>
-            <li><input type="radio" id="yen" name="currency" value="0.0094">
-            <label for="yen">Yen</label></li>
-        </ul>
-
-        <label for="bank">Choose your bank</label>
-        <select name="bank">
-            <option value="" NULL>Select one!</option>
-            <option value="BOA" >Bank of America</option>
-            <option value="key" >Key Bank</option>
-            <option value="chase" >Chase</option>
-            <option value="BECU" >Boeing Credit Union</option>
-            <option value="mattress" >Mattress</option>
-        </select>
-        <input type="submit" value="Convert!">
-        <p><a href="">Reset</a></p>
-    </fieldset>
-</form>
 <?php 
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
+function br(){
+    echo ' <br>';
+}
 
-    if(empty($_POST['name'])){
-        echo '<span class="error">Please fill out your name!</span>';
-    }
-    if(empty($_POST['email'])){
-        echo '<span class="error">Please fill out your email!</span>';
-    }
-    if(empty($_POST['money'])){
-        echo '<span class="error">Please fill out your amount of money!</span>';
-    }
-    if(empty($_POST['currency'])){
-        echo '<span class="error">Please select your currency!</span>';
-    }
-    if($_POST['bank'] == NULL){
-        echo '<span class="error">Please select your bank!</span>';
-    }
-    
-    if(isset($_POST['name'],$_POST['email'],$_POST['money'],$_POST['currency'])){
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $money = $_POST['money'];
-        $currency = $_POST['currency'];
-        $bank = $_POST['bank'];
-        $dollars = $money*$currency;
-        
-        $friendly_dollars = floor($dollars);
-        echo '
-        <div class="box">
-            <h2>Hello'.$name.'</h2>
-            <p> You now have $'.$friendly_dollars.
-            ' USD, and it will be deposited in <b>'.$bank.'</b> and we will be sending you an email at: <b>'.$email.'</b> in the next 24hours!</p><br>
-            
-        </div>';
-    }
+function sayHello(){
+    echo 'This is my say hello content!';
+}
+sayHello();
+br();
+
+function sayHello2($name){
+    echo 'Hello'.$name.'';
+}
+
+sayHello2('Youssoupha');
+br();
+sayHello2('Olga');
+br();
+sayHello2('Sam');
+br();
+sayHello2('Among');
+br();
+
+function sayHello3($name, $age){
+    echo 'My name is '.$name.' and I am '.$age.' years old!';
 }
 
 
+sayHello3('James', 20);
+br();
+sayHello3('John', 22);
+br();
+sayHello3('Jacob', 26);
+br();
+sayHello3('Jelloy', 35);
+br();
+
+
+function cube($n){
+    echo ($n*$n*$n);
+}
+
+cube(5);
+br();
+
+
+function celcius_converter($temp){
+    return ($temp*9/5) + 32;
+}
+
+echo ''.celcius_converter(100).' degrees';
+br();
+
+function area_volume($value1, $value2, $value3){
+
+    return array($value1*$value2,$value1*$value2*$value3);
+}
+
+// $my_return = area_volume(10,5,10);
+// echo '<b>Area: </b> '.$my_return[0].''.br().'';
+// echo '<b>Volume: </b> '.$my_return[1].''.br().'';
+
+list ($my_area, $my_volume) = area_volume(12,10,6);
+echo '<b>Area: </b> '.$my_area.''.br().'';
+echo '<b>Volume: </b> '.$my_volume.''.br().'';
 ?>
-</body>
-</html>

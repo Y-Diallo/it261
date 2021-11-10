@@ -56,6 +56,11 @@
             <p><a href="/it261/weeks/week5/currency3.php">currency3.php</a></p>
             <p><a href="/it261/weeks/week5/currency4.php">currency4.php</a></p>
             <p><a href="/it261/weeks/week5/null.php">null.php</a></p>
+            <h3>Week 6</h3>
+            <p><a href="/it261/weeks/week6/form1.php">form1.php</a></p>
+            <p><a href="/it261/weeks/week6/implode.php">implode.php</a></p>
+            <p><a href="/it261/weeks/week6/functions.php">functions.php</a></p>
+
         </aside>
         
         <footer>
