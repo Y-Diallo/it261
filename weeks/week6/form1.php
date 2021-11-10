@@ -62,6 +62,20 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     }else {
         $privacy = $_POST['privacy'];
     }
+
+
+    if(isset($_POST['first_name'],$_POST['last_name'],$_POST['gender'],
+    $_POST['email'],$_POST['wines'],$_POST['regions'],$_POST['comments'],$_POST['privacy'])){
+        $to ='fandy107@gmail.com';
+        $subject = 'Test Email';
+        $body = '
+        The first name is: '.$first_name.' '.PHP_EOL.'
+        The last name is: '.$last_name.' '.PHP_EOL.'
+        Gender: '.$gender.' '.PHP_EOL.'
+        Region: '.$regions.' '.PHP_EOL.'
+        Comments: '.$comments.' '.PHP_EOL.'
+        ';
+    }
 }
 
 ?>
