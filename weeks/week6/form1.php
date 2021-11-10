@@ -92,34 +92,26 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <label for="gender">Gender</label>
         <ul>
             <li><input type="radio" id="male" name="gender" value="male"
-            <?php if(isset($_POST['gender']) && $_POST['gender'] == 'male'){ echo 'checked="checked"';}?>>
-            <label for="male">Male</label></li>
+            <?php if(isset($_POST['gender']) && $_POST['gender'] == 'male'){ echo 'checked="checked"';}?>><label for="male">Male</label></li>
             <li><input type="radio" id="female" name="gender" value="female"
-            <?php if(isset($_POST['gender']) && $_POST['gender'] == 'female'){ echo 'checked="checked"';}?>>
-            <label for="female">Female</label></li>
+            <?php if(isset($_POST['gender']) && $_POST['gender'] == 'female'){ echo 'checked="checked"';}?>><label for="female">Female</label></li>
             <li><input type="radio" id="other" name="gender" value="other"
-            <?php if(isset($_POST['gender']) && $_POST['gender'] == 'other'){ echo 'checked="checked"';}?>>
-            <label for="other">Other</label></li>
+            <?php if(isset($_POST['gender']) && $_POST['gender'] == 'other'){ echo 'checked="checked"';}?>><label for="other">Other</label></li>
         </ul>
         <?php echo $gender_Err?>
 
         <label for="wines">Favorite Wines</label>
         <ul>
             <li><input type="checkbox" id="cab" name="wines[]" value="cab"
-            <?php if(isset($_POST['wines']) && in_array('cab',$wines)){ echo 'checked="checked"';}?>>
-            <label for="cab">Cabernet</label></li>
+            <?php if(isset($_POST['wines']) && in_array('cab',$wines)){ echo 'checked="checked"';}?>><label for="cab">Cabernet</label></li>
             <li><input type="checkbox" id="mer" name="wines[]" value="mer"
-            <?php if(isset($_POST['wines']) && in_array('mer',$wines)){ echo 'checked="checked"';}?>>
-            <label for="mer">Merlot</label></li>
+            <?php if(isset($_POST['wines']) && in_array('mer',$wines)){ echo 'checked="checked"';}?>><label for="mer">Merlot</label></li>
             <li><input type="checkbox" id="syrah" name="wines[]" value="syrah"
-            <?php if(isset($_POST['wines']) && in_array('syrah',$wines)){ echo 'checked="checked"';}?>>
-            <label for="syrah">Syrah</label></li>
+            <?php if(isset($_POST['wines']) && in_array('syrah',$wines)){ echo 'checked="checked"';}?>><label for="syrah">Syrah</label></li>
             <li><input type="checkbox" id="malbec" name="wines[]" value="malbec"
-            <?php if(isset($_POST['wines']) && in_array('malbec',$wines)){ echo 'checked="checked"';}?>>
-            <label for="malbec">Malbec</label></li>
+            <?php if(isset($_POST['wines']) && in_array('malbec',$wines)){ echo 'checked="checked"';}?>><label for="malbec">Malbec</label></li>
             <li><input type="checkbox" id="blend" name="wines[]" value="blend"
-            <?php if(isset($_POST['wines']) && in_array('blend',$wines)){ echo 'checked="checked"';}?>>
-            <label for="blend">Red Blend</label></li>
+            <?php if(isset($_POST['wines']) && in_array('blend',$wines)){ echo 'checked="checked"';}?>><label for="blend">Red Blend</label></li>
         </ul>
         <?php echo $wines_Err?>
 
@@ -156,8 +148,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <ul>
             <li><input type="radio" id="agreed" name="privacy" value="agreed"
             <?php if(isset($_POST['privacy']) && $_POST['price'] == 'agreed'){ echo 'checked="checked"';}?>
-            >
-            <label for="agreed">I agree!</label></li>
+            ><label for="agreed">I agree!</label></li>
         </ul>
         <?php echo $privacy_Err?>
 
