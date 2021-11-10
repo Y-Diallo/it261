@@ -75,6 +75,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         Region: '.$regions.' '.PHP_EOL.'
         Comments: '.$comments.' '.PHP_EOL.'
         ';
+        mail($to, $subject, $body);
+        header('Location: thx.php');
     }
 }
 
