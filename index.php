@@ -15,6 +15,7 @@
                     <li><a href="website/daily.php">Switch(3)</a></li>
                     <li><a href="adder.php">Adder(4)</a></li>
                     <li><a href="calculator.php">Calculating Form(4)</a></li>
+                    <li><a href="website/contact.php">Emailable Form(7)</a></li>
                 </ul>
             </nav>
         </div>
@@ -60,6 +61,10 @@
             <p><a href="/it261/weeks/week6/form1.php">form1.php</a></p>
             <p><a href="/it261/weeks/week6/implode.php">implode.php</a></p>
             <p><a href="/it261/weeks/week6/functions.php">functions.php</a></p>
+            <h3>Week 7</h3>
+            <p><a href="/it261/weeks/week7/random.php">random.php</a></p>
+            <p><a href="/it261/weeks/week7/pictures.php">pictures.php</a></p>
+            <p><a href="/it261/weeks/week7/strings.php">strings.php</a></p>
 
         </aside>
         
