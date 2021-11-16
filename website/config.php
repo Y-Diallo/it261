@@ -132,7 +132,7 @@ if(isset($_GET['today'])){
             $privacy = $_POST['privacy'];
         }
         if(empty($_POST['phone'])) {  // if empty, type in your number
-            $phone_Err = 'Your phone number please!';
+            $phone_Err = '<span class="error">Your phone number please!</span>';
         } elseif(array_key_exists('phone', $_POST)){
             if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
             { // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
