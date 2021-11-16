@@ -81,6 +81,9 @@ main {
     margin-bottom: 20px;
 }
 
+.formContainer{
+    height: fit-content;
+}
 aside {
     width: 36.17%;
     float: right;
@@ -115,7 +118,7 @@ footer li {
 
 form {
     width: 400px;
-    margin: 30px auto;
+    margin: 30px;
 }
 
 label {
@@ -127,7 +130,7 @@ label {
 ul label {
     color: #333;
     margin-bottom: 5px;
-    display: block;
+    display: inline-block;
 }
 
 form ul {
