@@ -4,7 +4,15 @@
 ?>
 <div id="wrapper">
     <div id="hero">
-
+    <?php 
+        echo random_pics($photos);
+    ?>
+<h2>
+<pre>
+<br>
+//put random pics function here
+</pre>
+</h2>
     </div>
     <main>
     <h1><?php echo $headline;?></h1>
