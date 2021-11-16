@@ -129,6 +129,7 @@ form {
 label {
     color: #333;
     margin-bottom: 5px;
+    display: block;
 }
 
 form ul {
