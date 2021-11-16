@@ -54,6 +54,11 @@ switch(THIS_PAGE){
         $body = 'galleryBox';
         $headline = 'Welcome to our Gallery Page';
         break;
+    default:
+        $title = "Youssoupha's it261 website";
+        $body = 'defaultBox';
+        $headline = 'Welcome to my Website';
+        break;
 }
 if(isset($_GET['today'])){
     $today = $_GET['today'];
@@ -67,8 +72,8 @@ if(isset($_GET['today'])){
     $last_name = '';
     $gender = '';
     $email = '';
-    $wines[] = '';
-    $regions = '';
+    $tasks[] = '';
+    $colors = '';
     $comments = '';
     $privacy = '';
     $phone = '';
@@ -77,8 +82,8 @@ if(isset($_GET['today'])){
     $last_name_Err = '';
     $gender_Err = '';
     $email_Err = '';
-    $wines_Err = '';
-    $regions_Err = '';
+    $tasks_Err = '';
+    $colors_Err = '';
     $comments_Err = '';
     $privacy_Err = '';
     $phone_Err = '';
@@ -106,15 +111,15 @@ if(isset($_GET['today'])){
         }else {
             $email = $_POST['email'];
         }
-        if(empty(implode($_POST['wines']))){//wines
-            $wines_Err = '<span class="error">Please select your wine(s)!</span>';
+        if(empty(implode($_POST['tasks']))){//tasks
+            $tasks_Err = '<span class="error">Please select your task(s)!</span>';
         }else {
-            $wines = $_POST['wines'];
+            $tasks = $_POST['tasks'];
         }
-        if($_POST['regions'] == NULL){//regions
-            $regions_Err = '<span class="error">Please select your region!</span>';
+        if($_POST['colors'] == NULL){//colors
+            $colors_Err = '<span class="error">Please select your color!</span>';
         }else {
-            $regions = $_POST['regions'];
+            $colors = $_POST['colors'];
         }
         if(empty($_POST['comments'])){//comments
             $comments_Err = '<span class="error">Please fill out your comments!</span>';
@@ -137,17 +142,17 @@ if(isset($_GET['today'])){
             }
         }
 
-        function my_wines(){
+        function my_tasks(){
             $my_return ='';
-            if(!empty($_POST['wines'])){
-                $my_return = implode(', ',$_POST['wines']);
+            if(!empty($_POST['tasks'])){
+                $my_return = implode(', ',$_POST['tasks']);
             }
             return $my_return;
         }
 
         if(isset($_POST['first_name'],$_POST['last_name'],$_POST['gender'],
-        $_POST['email'],$_POST['wines'],$_POST['regions'],$_POST['comments'],$_POST['privacy'],$_POST['phone'])){
-            $to ='fandy107@gmail.com';
+        $_POST['email'],$_POST['tasks'],$_POST['colors'],$_POST['comments'],$_POST['privacy'],$_POST['phone'])){
+            $to ='fandy107@gmail.com';//oszemeo@mystudentswa.com
             $subject = 'Test Email';
             $body = '
             The first name is: '.$first_name.' '.PHP_EOL.'
@@ -155,8 +160,8 @@ if(isset($_GET['today'])){
             Gender: '.$gender.' '.PHP_EOL.'
             Email: '.$email.' '.PHP_EOL.'
             Phone: '.$phone.' '.PHP_EOL.'
-            Region: '.$regions.' '.PHP_EOL.'
-            Wines: '.my_wines().' '.PHP_EOL.'
+            Among Us Color: '.$colors.' '.PHP_EOL.'
+            Tasks: '.my_tasks().' '.PHP_EOL.'
             Comments: '.$comments.' '.PHP_EOL.'
             ';
 
