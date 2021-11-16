@@ -1,6 +1,14 @@
 <?php 
     include('config.php');
     include('includes/header.php');
+
+    $photos = array(
+        'photo1',
+        'photo2',
+        'photo3',
+        'photo4',
+        'photo5',
+    );
 ?>
 <div id="wrapper">
     <div id="hero">
@@ -10,7 +18,11 @@
 <h2>
 <pre>
 <br>
-//put random pics function here
+function random_pics($photos){
+    $i = rand(0,(count($photos)-1));
+    $selected_image = ''.$photos[$i].'.jpg';
+    echo '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
+}
 </pre>
 </h2>
     </div>
