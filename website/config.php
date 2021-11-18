@@ -152,7 +152,7 @@ if(isset($_GET['today'])){
 
         if(isset($_POST['first_name'],$_POST['last_name'],$_POST['gender'],
         $_POST['email'],$_POST['tasks'],$_POST['colors'],$_POST['comments'],$_POST['privacy'],$_POST['phone'])){
-            $to ='oszemeo@mystudentswa.com';//
+            $to ='szemeo@mystudentswa.com';//
             $subject = 'Test Email';
             $body = '
             The first name is: '.$first_name.' '.PHP_EOL.'
