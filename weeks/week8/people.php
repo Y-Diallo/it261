@@ -10,24 +10,31 @@ $people['Andrew_Yang'] = 'ayang_Entrepreneur from NY.';
 $people['Pete_Buttigieg'] = 'butti_Transportation Secretary from IN.';
 $people['Amy_Klobuchar'] = 'klobu_Senator from MN.';
 $people['Julian_Castro'] = 'castr_Former Housing/Urban from TX.';
-?>
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Our pictures - Week 7 class exercise</title>
-<link href="css/styles.css" type="text/css" rel="stylesheet">
-</head>
 
-<body>
-    <table>
-        <?php foreach($people as $name => $image) :?>
-            <tr>
-                <td><img src="images/<?php echo ''.substr($image,0, 5).'.jpg'; ?>" alt="<?php echo str_replace('_', ' ', $name); ?>"></td>
-                <td><?php echo str_replace('_', ' ', $name); ?></td>
-                <td><?php echo substr($image, 6); ?></td>
-            </tr>
-        <?php endforeach; ?>
-    </table>
-</body>
-</html>
+
+include('config.php');
+
+$sql = 'SELECT * FROM people';
+$iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
+
+$result = mysqli_query($iConn, $sql) or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
+
+
+if(mysqli_num_rows($result) > 0){
+    while($row = mysqli_fetch_assoc($result)){
+        echo '<p> For more information about '.$row['first_name'].', please click <a href="people-view.php?id='.$row['people_id'].'">here!</a>';
+        echo '<ul>';
+        echo '<li>'.$row['first_name'].'</li>';
+        echo '<li>'.$row['last_name'].'</li>';
+        echo '<li>'.$row['email'].'</li>';
+        echo '</ul>';
+    }
+} else {
+    echo 'Houston, we have a problem';
+}
+
+mysqli_free_result($result);
+mysqli_close($iConn);
+
+
+?>
