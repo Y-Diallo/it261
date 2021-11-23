@@ -1,4 +1,5 @@
 <?php 
+    include('config.php');
     include('includes/header.php'); 
     $companies['Sony_Electronics'] = 'sonye_make.believe';
     $companies['CVS_Health'] = 'cvshe_Health Is Everything';
