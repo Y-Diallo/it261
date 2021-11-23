@@ -26,10 +26,10 @@ if(mysqli_num_rows($result) > 0){
     $feedback = 'Something is not working';
 }
 
-//now include header on big assignment
+include('includes/header.php');
 ?>
-
-<h2> Welcome to <?php echo $first_name;?>'s page!</h2>
+<main>
+<h1> Welcome to <?php echo $first_name;?>'s page!</h1>
 
 <?php if($feedback == ''){
 echo '<ul>';
@@ -42,6 +42,17 @@ echo '</ul>';
 echo '<p>'.$description.'</p>';
 echo '<p>Return to the <a href="people.php">people page!</a></p>';
 }
+?>
+</main>
+<aside>
+
+
+
+</aside>
+
+
+<?php
 mysqli_free_result($result);
 mysqli_close($iConn);
+include('includes/footer.php');
 ?>

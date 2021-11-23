@@ -4,6 +4,8 @@ include('config.php');
 include('includes/header.php');
 ?>
 <main>
+<h1>Welcome to my People page Class Exercise</h1>
+
 <?php
 $sql = 'SELECT * FROM people';
 $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));

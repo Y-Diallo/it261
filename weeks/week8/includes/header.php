@@ -9,4 +9,3 @@
 
 <body>
     <div id="wrapper">
-        <h1>Welcome to my People page Class Exercise</h1>
