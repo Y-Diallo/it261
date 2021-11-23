@@ -20,6 +20,7 @@ if(mysqli_num_rows($result) > 0){
         $occupation = stripslashes($row['occupation']);
         $birthdate = stripslashes($row['birthdate']);
         $description = stripslashes($row['description']);
+        $blurb = stripslashes($row['blurb']);
         $feedback = '';
     }
 }else {
@@ -45,10 +46,12 @@ echo '<p>Return to the <a href="people.php">people page!</a></p>';
 ?>
 </main>
 <aside>
-
-
-
+    <?php if($feedback == ''){//need images and blurbs
+        echo '<img class="center" src="images/people'.$id.'.jpg" alt="'.$first_name.'"></td>';
+        echo '<p class="blurb">'.$blurb.'</p>';
+    }?>
 </aside>
+</div>
 
 
 <?php
