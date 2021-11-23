@@ -12,7 +12,7 @@
     <div id="hero">
 
     </div>
-    <main>
+    <main class="container">
     <h1><?php echo $headline;?></h1>
     <table>
         <?php foreach($companies as $name => $image) :?>

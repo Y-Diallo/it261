@@ -81,7 +81,7 @@ main {
     margin-bottom: 20px;
 }
 
-.formContainer{
+.container{
     height: fit-content;
 }
 aside {
@@ -141,4 +141,14 @@ form ul {
 
 fieldset {
     padding: 8px;
+}
+
+table {
+    width: 400px;
+    margin: 20px auto;
+
+}
+td {
+    height: 200px;
+    margin: 5px auto;
 }
