@@ -1,7 +1,10 @@
 <?php 
 
 include('config.php');
-
+include('includes/header.php');
+?>
+<main>
+<?php
 $sql = 'SELECT * FROM people';
 $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
@@ -23,6 +26,15 @@ if(mysqli_num_rows($result) > 0){
 
 mysqli_free_result($result);
 mysqli_close($iConn);
+?>
+</main>
+<aside>
 
 
+
+</aside>
+</div>
+
+<?php
+include('includes/footer.php');
 ?>
