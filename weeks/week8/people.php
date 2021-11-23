@@ -1,16 +1,4 @@
 <?php 
-$people['Donald_Trump'] = 'trump_Former President from NY.';
-$people['Joe_Biden'] = 'biden_President from PA.';
-$people['Hilary_Clinton'] = 'clint_Secretary from NY.';
-$people['Bernie_Sanders'] = 'sande_Senator from VT.';
-$people['Elizabeth_Warren'] = 'warre_Senator from MA.';
-$people['Kamala_Harris'] = 'harri_Vice President from CA.';
-$people['Cory_Booker'] = 'booke_Senator from NJ.';
-$people['Andrew_Yang'] = 'ayang_Entrepreneur from NY.';
-$people['Pete_Buttigieg'] = 'butti_Transportation Secretary from IN.';
-$people['Amy_Klobuchar'] = 'klobu_Senator from MN.';
-$people['Julian_Castro'] = 'castr_Former Housing/Urban from TX.';
-
 
 include('config.php');
 
