@@ -29,6 +29,7 @@ if(mysqli_num_rows($result) > 0){
 
 include('includes/header.php');
 ?>
+<div id="wrapper">
 <main>
 <h1> Welcome to <?php echo $first_name;?>'s page!</h1>
 
