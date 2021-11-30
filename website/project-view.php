@@ -35,11 +35,11 @@ include('includes/header.php');
 
 <?php if($feedback == ''){
 echo '<ul>';
-echo '<li><b>First Name:</b>'.$first_name.'</li>';
-echo '<li><b>Last Name:</b>'.$last_name.'</li>';
-echo '<li><b>Gamertag:</b>'.$gamertag.'</li>';
-echo '<li><b>Age:</b>'.$age.'</li>';
-echo '<li><b>Platform:</b>'.$platform.'</li>';
+echo '<li><b>First Name: </b>'.$first_name.'</li>';
+echo '<li><b>Last Name: </b>'.$last_name.'</li>';
+echo '<li><b>Gamertag: </b>'.$gamertag.'</li>';
+echo '<li><b>Age: </b>'.$age.'</li>';
+echo '<li><b>Platform: </b>'.$platform.'</li>';
 echo '</ul>';
 echo '<p>'.$description.'</p>';
 echo '<p>Return to the <a href="project.php">project page!</a></p>';

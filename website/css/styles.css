@@ -84,7 +84,9 @@ main {
 
 .container{
     height: fit-content;
+    padding-bottom: 10px;
 }
+
 aside {
     width: 36.17%;
     float: right;
