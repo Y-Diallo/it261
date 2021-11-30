@@ -52,7 +52,6 @@ echo '<p>Return to the <a href="project.php">project page!</a></p>';
         echo '<p class="blurb">'.$blurb.'</p>';
     }?>
 </aside>
-</div>
 
 
 <?php
