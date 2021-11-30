@@ -9,9 +9,6 @@
 
 ?>
 <div id="wrapper">
-    <div id="hero">
-
-    </div>
     <main class="container">
     <h1><?php echo $headline;?></h1>
     <table>
