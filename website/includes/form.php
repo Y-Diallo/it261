@@ -43,7 +43,7 @@
 
         <span class="label">Among Us Color</span>
         <select name="colors">
-            <option value="" NULL 
+            <option value="" 
             <?php if(isset($_POST['colors']) && $_POST['colors'] == NULL){ echo 'selected="unselected"';}?>>Select one!</option>
             <option value="red" 
             <?php if(isset($_POST['colors']) && $_POST['colors'] == 'red'){ echo 'selected="selected"';}?>
