@@ -51,7 +51,7 @@ echo '<p>Return to the <a href="people.php">people page!</a></p>';
         echo '<p class="blurb">'.$blurb.'</p>';
     }?>
 </aside>
-</div>
+
 
 
 <?php

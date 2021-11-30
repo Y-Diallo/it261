@@ -17,9 +17,9 @@ if(mysqli_num_rows($result) > 0){
     while($row = mysqli_fetch_assoc($result)){
         echo '<h3> For more information about '.$row['gamertag'].', please click <a href="project-view.php?id='.$row['id'].'">here!</a></h3>';
         echo '<ul>';
-        echo '<li>'.$row['first_name'].''.$row['last_name'].'</li>';
+        echo '<li>Name: '.$row['first_name'].' '.$row['last_name'].'</li>';
         echo '<li></li>';
-        echo '<li>'.$row['gamertag'].'</li>';
+        echo '<li>Gamer Tag: '.$row['gamertag'].'</li>';
         echo '</ul>';
         echo '<hr>';
     }
