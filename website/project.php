@@ -32,7 +32,7 @@ mysqli_close($iConn);
 ?>
     </main>
 
-    <aside>
+    <aside class="container">
     <h3>Our Aside for our Project</h3>
     <img id="image" src="images/project.png" alt="youtube logo"><!--picture related to form-->
     </aside>
