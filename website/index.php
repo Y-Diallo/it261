@@ -15,9 +15,6 @@
     <?php 
         echo random_pics($photos);
     ?>
-<h2>
-
-</h2>
     </div>
     <main>
     <h1><?php echo $headline;?></h1>

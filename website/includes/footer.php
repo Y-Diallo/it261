@@ -9,13 +9,12 @@
                     echo ''.$dateCreated.' - '.$dateCurrent.'    ';
                  }
                  ?></li>
-                <ul>
+                
                 <li>All Rights Reserved </li>
                 <li><a href="">Terms of use</a></li>
                 <li><a href="../index.php">Portal page</a></li>
                 <li> <a id="html-checker" href="#">Check HTML</a></li>
                 <li><a id="css-checker" href="#">Check CSS</a></li>
-                </ul>
 
                 <script>
                     document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
