@@ -36,7 +36,7 @@ mysqli_close($iConn);
 
 
 </aside>
-</div>
+
 
 <?php
 include('includes/footer.php');
