@@ -17,8 +17,8 @@ if(mysqli_num_rows($result) > 0){
     while($row = mysqli_fetch_assoc($result)){
         echo '<h3> For more information about '.$row['gamertag'].', please click <a href="project-view.php?id='.$row['id'].'">here!</a></h3>';
         echo '<ul>';
-        echo '<li>'.$row['first_name'].'</li>';
-        echo '<li>'.$row['last_name'].'</li>';
+        echo '<li>'.$row['first_name'].''.$row['last_name'].'</li>';
+        echo '<li></li>';
         echo '<li>'.$row['gamertag'].'</li>';
         echo '</ul>';
         echo '<hr>';
@@ -34,7 +34,7 @@ mysqli_close($iConn);
 
     <aside>
     <h3>Our Aside for our Project</h3>
-    <img src="images/project.png" alt="youtube logo"><!--picture related to form-->
+    <img id="image" src="images/project.png" alt="youtube logo"><!--picture related to form-->
     </aside>
 <?php 
 include('includes/footer.php');
