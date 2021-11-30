@@ -4,7 +4,7 @@
 ?>
 <div id="wrapper">
     <div id="hero">
-    <img src="images/streamerstable.png" alt="adminer table">
+    <img id="image" src="images/streamerstable.png" alt="adminer table">
     </div>
     <main>
     <h1><?php echo $headline;?></h1>

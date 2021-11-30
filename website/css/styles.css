@@ -84,7 +84,6 @@ main {
 
 .container{
     height: fit-content;
-    padding-bottom: 10px;
 }
 
 aside {
@@ -92,6 +91,7 @@ aside {
     float: right;
     height: 300px;
     background: lightgoldenrodyellow;
+    padding-bottom: 10px;
 }
 
 footer {
