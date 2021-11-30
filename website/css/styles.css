@@ -143,6 +143,31 @@ fieldset {
     padding: 8px;
 }
 
+.blurb {
+    font-style: italic;
+    font-size: .9em;
+}
+
+.center {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+hr{
+    display: block;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.35;
+}
+
+main ul {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
 table {
     width: 400px;
     margin: 20px auto;
