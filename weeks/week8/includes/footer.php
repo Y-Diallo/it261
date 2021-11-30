@@ -9,7 +9,7 @@
                         echo ''.$dateCreated.' - '.$dateCurrent.'    ';
                     }
                     ?></li>
-                    <<li>All Rights Reserved </li>
+                    <li>All Rights Reserved </li>
                     <li><a href="">Terms of use</a></li>
                     <li><a href="../index.php">Portal page</a></li>
                     <li> <a id="html-checker" href="#">Check HTML</a></li>
