@@ -47,7 +47,7 @@ echo '<p>Return to the <a href="people.php">people page!</a></p>';
 </main>
 <aside>
     <?php if($feedback == ''){//need images and blurbs
-        echo '<img class="center" src="images/people'.$id.'.jpg" alt="'.$first_name.'"></td>';
+        echo '<img class="center" src="images/people'.$id.'.jpg" alt="'.$first_name.'">';
         echo '<p class="blurb">'.$blurb.'</p>';
     }?>
 </aside>

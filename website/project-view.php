@@ -48,7 +48,7 @@ echo '<p>Return to the <a href="project.php">project page!</a></p>';
 </main>
 <aside class = "container">
     <?php if($feedback == ''){//need images and blurbs
-        echo '<img id="image" src="images/project'.$id.'.jpg" alt="'.$first_name.'"></td>';
+        echo '<img id="image" src="images/project'.$id.'.jpg" alt="'.$first_name.'">';
         echo '<p class="blurb">'.$blurb.'</p>';
     }?>
 </aside>
