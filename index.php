@@ -65,7 +65,8 @@
             <p><a href="/it261/weeks/week7/random.php">random.php</a></p>
             <p><a href="/it261/weeks/week7/pictures.php">pictures.php</a></p>
             <p><a href="/it261/weeks/week7/strings.php">strings.php</a></p>
-
+            <h3>Week 8</h3>
+            <p><a href="/it261/weeks/week8/people.php">people.php</a></p>
         </aside>
         
         <footer>
