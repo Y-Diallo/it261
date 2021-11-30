@@ -1,4 +1,8 @@
 <?php 
+ob_start();  // prevents header errors before reading the whole page!
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+include('credentials.php');
 
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
@@ -54,6 +58,10 @@ switch(THIS_PAGE){
         $body = 'galleryBox';
         $headline = 'Welcome to our Gallery Page';
         break;
+    case 'project-view.php':
+        $title = 'Project Page';
+        $body = 'defaultBox';
+        $headline = 'Welcome to our Project Page';
     default:
         $title = "Youssoupha's it261 website";
         $body = 'defaultBox';
@@ -180,4 +188,18 @@ function random_pics($photos){
     $selected_image = ''.$photos[$i].'.jpg';
     echo '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
 }
-?>
+
+function myError($myFile, $myLine, $errorMsg)
+{
+if(defined('DEBUG') && DEBUG)
+{
+ echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+      echo 'Error message: <b> '.$errorMsg.'</b>';
+      die();
+  }  else {
+      echo ' Houston, we have a problem!';
+      die();
+  }
+    
+    
+}
