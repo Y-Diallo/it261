@@ -67,3 +67,35 @@ if(isset($_POST['reg_user'])){//something that represents being registered in
         header('Location: login.php');
     }
 }
+
+if(isset($_POST['login_user'])){//something that represents being registered in
+    $username = mysqli_real_escape_string($iConn, $_POST['username']);
+    $password = mysqli_real_escape_string($iConn, $_POST['password']);
+
+
+    if(empty($username)){//username
+        array_push($errors, '<span class="error">Please fill out your username!</span>');
+    }
+    if(empty($password)){//password
+        array_push($errors, '<span class="error">Please fill out your password!</span>');
+    }
+
+    if(empty($errors)){
+        $password = md5($password);
+    
+
+    $query = "SELECT * FROM users WHERE username='$username' AND password = '$password'";
+
+    $results = mysqli_query($iConn, $query);
+
+        if(mysqli_num_rows($results)==1){
+            $_SESSION['username'] = $username;
+            $_SESSION['success'] = $success;
+
+            header('Location: index.php');
+        }else {
+            array_push($errors,'Wrong Username/Password Combo');
+        }
+    }
+
+}

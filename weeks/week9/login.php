@@ -3,7 +3,7 @@ include('includes/server.php');
 include('includes/header.php');
 ?>
 <main>
-<h1> Register Today!</h1>
+<h1> Login!</h1>
 
 <form action="
 <?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>
@@ -15,7 +15,7 @@ include('includes/header.php');
         <span class="label">Password</span>
         <input type="text" name="password_1" value="<?php if(isset($_POST['password_1'])){ echo htmlspecialchars($_POST['password_1']);} ?>">
 
-        <input name = "reg_user" type="submit" value="Submit!">
+        <input name = "login_user" type="submit" value="Submit!">
         <p><a href="">Reset</a></p>
         <?php echo $username_Err?>
         <?php echo $password_1_Err?>
