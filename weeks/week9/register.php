@@ -1,5 +1,5 @@
 <?php
-include('includes/server.php');
+include('server.php');
 include('includes/header.php');
 ?>
 <main>
@@ -29,14 +29,11 @@ include('includes/header.php');
         <input type="text" name="password_2" value="<?php if(isset($_POST['password_2'])){ echo htmlspecialchars($_POST['password_2']);} ?>">
         
 
-        <button type="submit" name = "reg_user" class="button">Register</button>
-        <button class="button"><a href="">Reset</a></button>
-        <?php echo $first_name_Err?>
-        <?php echo $last_name_Err?>
-        <?php echo $email_Err?>
-        <?php echo $username_Err?>
-        <?php echo $password_1_Err?>
-        <?php echo $password_2_Err?>
+        <button type="submit" name = "reg_user" class="btn">Register</button>
+        <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>'">Reset</button>
+        <?php
+        include('./errors.php');
+        ?>
     </fieldset>
 </form>
 <p><a href="/it261/weeks/week9/login.php">Already a Member? Please Login!</a></p>
@@ -45,6 +42,7 @@ include('includes/header.php');
 
 
 <?php
+include('./errors.php');
 mysqli_free_result($result);
 mysqli_close($iConn);
 include('includes/footer.php');
