@@ -1,24 +1,25 @@
 <?php
-include('includes/server.php');
+include('server.php');
 include('includes/header.php');
 ?>
 <main>
-<h1> Login!</h1>
+<h1 class = "center"> Login!</h1>
 
 <form action="
 <?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>
 " method="POST">
     <fieldset>
          <span class="label">Username</span>
-        <input type="text" name="username" value="<?php if(isset($_POST['username'])){ echo htmlspecialchars($_POST['username']);} ?>">
+        <input type="text" name="username" value="<?php if(isset($_POST['username'])){ echo $_POST['username'];} ?>">
         
         <span class="label">Password</span>
-        <input type="text" name="password_1" value="<?php if(isset($_POST['password_1'])){ echo htmlspecialchars($_POST['password_1']);} ?>">
+        <input type="password" name="password">
 
-        <input name = "login_user" type="submit" value="Submit!">
-        <p><a href="">Reset</a></p>
-        <?php echo $username_Err?>
-        <?php echo $password_1_Err?>
+        <button name="login_user" type="submit" class="btn">Login</button>
+        <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>'">Reset</button>
+        <?php
+        include('./errors.php');
+        ?>
     </fieldset>
 </form>
 <p><a href="/it261/weeks/week9/register.php">Not a Member? Please Register!</a></p>
