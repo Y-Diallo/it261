@@ -13,42 +13,72 @@ body {
     margin: 20px auto;
 }
 
-main {
+header {
+    background: rgb(90, 107, 90);
+    height: 200px;
+}
+
+.success {
     float: left;
-    width: 64%;
-    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid blue;
 }
 
-aside {
+.welcome-logout {
     float: right;
-    width: 34%;
-    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid blue;
 }
 
-.blurb {
-    font-style: italic;
-    font-size: .9em;
+#wrapper {
+    clear: both;
+    width: 940px;
+    margin: 0 auto;
 }
-
-.center {
+/* form styles */
+.label {
     display: block;
-    margin: 0 auto 20px auto;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-hr{
+input {
     display: block;
-    margin-bottom: 20px;
-}
-
-p {
-    margin-bottom: 20px;
-    line-height: 1.35;
-}
-
-main ul {
+    width: 100%;
     margin-bottom: 10px;
-    list-style-type: none;
 }
+
+fieldset {
+    padding: 10px;
+}
+
+form {
+    width: 500px;
+    margin: 0  auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.block {
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+h3{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.error {
+    margin: 10px 0;
+    color: red;
+    font-style: italic;
+}
+
 
 footer {
     height: 50px;
@@ -66,8 +96,4 @@ footer li {
     float: left;
     list-style-type: none;
     margin-left: 20px;
-}
-
-h1, h2, h3 {
-    margin-bottom: 10px;
 }

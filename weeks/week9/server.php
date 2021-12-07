@@ -18,26 +18,26 @@ if(isset($_POST['reg_user'])){//something that represents being registered in
 
 
     if(empty($first_name)){//first name
-        array_push($errors, '<span class="error">Please fill out your first name!</span>');
+        array_push($errors, 'Please fill out your first name!');
     }
     if(empty($last_name)){//last name
-        array_push($errors, '<span class="error">Please fill out your last name!</span>');
+        array_push($errors, 'Please fill out your last name!');
     }
     if(empty($email)){//email
-        array_push($errors, '<span class="error">Please fill out your email!</span>');
+        array_push($errors, 'Please fill out your email!');
     }
     if(empty($username)){//username
-        array_push($errors, '<span class="error">Please fill out your username!</span>');
+        array_push($errors, 'Please fill out your username!');
     }
     if(empty($password_1)){//password
-        array_push($errors, '<span class="error">Please fill out your password!</span>');
+        array_push($errors, 'Please fill out your password!');
     }
     if(empty($password_2)){//email
-        array_push($errors, '<span class="error">Please fill out your confirm password!</span>');
+        array_push($errors, 'Please fill out your confirm password!');
     }elseif (empty($password_2) && $password_2 !== $password_1){
-        array_push($errors, '<span class="error">Please fill out your confirm password!</span>');
+        array_push($errors, 'Please fill out your confirm password!');
     }elseif ($password_2 !== $password_1){
-        array_push($errors, '<span class="error">Passwords must match!</span>');
+        array_push($errors, 'Passwords must match!');
     }
 
     $user_check_query = "SELECT * FROM users WHERE username= '$username' OR email = '$email' LIMIT 1"; //checks all users for clash
@@ -45,11 +45,11 @@ if(isset($_POST['reg_user'])){//something that represents being registered in
     $rows = mysqli_fetch_assoc($result);
     if($rows){
         if($rows['username'] == $username){
-            array_push($errors, '<span class="error">Username already exists!</span>');
+            array_push($errors, 'Username already exists!');
         }
 
         if($rows['email'] == $email){
-            array_push($errors, '<span class="error">Email already exists!</span>');
+            array_push($errors, 'Email already exists!');
         }
 
     }
@@ -74,10 +74,10 @@ if(isset($_POST['login_user'])){//something that represents being registered in
 
 
     if(empty($username)){//username
-        array_push($errors, '<span class="error">Please fill out your username!</span>');
+        array_push($errors, 'Please fill out your username!');
     }
     if(empty($password)){//password
-        array_push($errors, '<span class="error">Please fill out your password!</span>');
+        array_push($errors, 'Please fill out your password!');
     }
 
     if(empty($errors)){
@@ -94,7 +94,7 @@ if(isset($_POST['login_user'])){//something that represents being registered in
 
             header('Location: index.php');
         }else {
-            array_push($errors,'<span class="error">Wrong Username/Password Combo</span>');
+            array_push($errors,'Wrong Username/Password Combo');
         }
     }
 

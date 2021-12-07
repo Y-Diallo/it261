@@ -13,7 +13,7 @@ if(isset($_GET['logout'])){
 }
 include('includes/header.php');
 if(isset($_SESSION['success'])) :?>
-<header>
+
 <div class="success">
     <h3><?php echo $_SESSION['success'];
 unset($_SESSION['success']); ?></h3>
@@ -21,6 +21,7 @@ unset($_SESSION['success']); ?></h3>
 <?php endif;?>
 <?php
 if(isset($_SESSION['username'])) :?>
+
 <div class="welcome-logout">
     <h3>Hello <?php echo $_SESSION['username']; ?>!</h3>
     <p><a href="index.php?logout='1'">Log out</a></p>

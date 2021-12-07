@@ -1,8 +1,9 @@
 <?php
 include('server.php');
-include('includes/header.php');
+include('includes/header-form.php');
 ?>
-<main>
+
+<div id="wrapper">
 <h1 class = "center"> Login!</h1>
 
 <form action="
@@ -22,12 +23,9 @@ include('includes/header.php');
         ?>
     </fieldset>
 </form>
-<p><a href="/it261/weeks/week9/register.php">Not a Member? Please Register!</a></p>
-</main>
+<h3>Not a Member?</h3>
+<span class="block"><a href="register.php">Register here!</a></span>
 </div>
 
-
-<?php
-
-include('includes/footer.php');
-?>
+</body>
+</html>
