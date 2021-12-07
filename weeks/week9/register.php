@@ -2,7 +2,8 @@
 include('server.php');
 include('includes/header.php');
 ?>
-<main>
+<div id="wrapper">
+<main><!--remove main-->
 <h1 class = "center"> Register Today!</h1>
 
 <form action="
