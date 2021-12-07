@@ -29,8 +29,8 @@ include('includes/header.php');
         <input type="text" name="password_2" value="<?php if(isset($_POST['password_2'])){ echo htmlspecialchars($_POST['password_2']);} ?>">
         
 
-        <input name = "reg_user" type="submit" value="Submit!">
-        <p><a href="">Reset</a></p>
+        <button type="submit" name = "reg_user" class="button">Register</button>
+        <button class="button"><a href="">Reset</a></button>
         <?php echo $first_name_Err?>
         <?php echo $last_name_Err?>
         <?php echo $email_Err?>
@@ -39,7 +39,7 @@ include('includes/header.php');
         <?php echo $password_2_Err?>
     </fieldset>
 </form>
-<p><a href="/it261/weeks/week9/index.php">Already a Member? Please Login!</a></p>
+<p><a href="/it261/weeks/week9/login.php">Already a Member? Please Login!</a></p>
 </main>
 </div>
 

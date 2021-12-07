@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 include('config.php');
 if(isset($_GET['id'])){//something that represents being logged in
     $id = (int)$_GET['id'];
