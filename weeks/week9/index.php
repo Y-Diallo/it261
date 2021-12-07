@@ -27,5 +27,6 @@ if(isset($_SESSION['username'])) :?>
 <?php endif;?>
 
 <main>
+<h1> Welcome to the Home Page! </h1>
 </main>
 </div>

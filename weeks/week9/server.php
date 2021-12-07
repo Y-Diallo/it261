@@ -94,7 +94,7 @@ if(isset($_POST['login_user'])){//something that represents being registered in
 
             header('Location: index.php');
         }else {
-            array_push($errors,'Wrong Username/Password Combo');
+            array_push($errors,'<span class="error">Wrong Username/Password Combo</span>');
         }
     }
 
