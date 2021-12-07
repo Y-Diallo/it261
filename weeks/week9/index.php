@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 include('config.php');
 
 $sql = 'SELECT * FROM people';

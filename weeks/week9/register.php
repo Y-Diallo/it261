@@ -43,7 +43,6 @@ include('includes/header.php');
 
 <?php
 include('./errors.php');
-mysqli_free_result($result);
-mysqli_close($iConn);
+
 include('includes/footer.php');
 ?>
