@@ -97,14 +97,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $days = $totalHours/$hours;//total time traveled over time per day
         $friendly_days = number_format($days);
         
-        
+
         echo '
         <div class="box">
             <h2>Calculator Results</h2>
             <p> '.$name.', you will be driving <b>'.$miles.' miles</b><br>
             Your vehicle has an efficieny rating of <b>'.$MPG.' miles per gallon</b>
             Your total cost for gas will be <b>$'.$friendly_total.' dollars</b>
-            You will be driving a total of <b>'.$friendly_time.' hours equating to '.$friendly_days.' days</b>
+            You will be driving a total of <b>'.$friendly_time.' hours equating to '.$days.' days</b>
             </p>
             
         </div>';
