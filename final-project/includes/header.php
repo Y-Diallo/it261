@@ -39,23 +39,24 @@ if(isset($_GET['logout'])){
                         ?>
                     </ul>
                 </nav>
-            </div>
-        </header>
-<?php
-if(isset($_SESSION['success'])) :?>
-
-<div class="success">
-    <h3><?php echo $_SESSION['success'];
-unset($_SESSION['success']); ?></h3>
-</div>
-<?php endif;?>
-<?php
+                <?php
 if(isset($_SESSION['username'])) :?>
 
 <div class="welcome-logout">
     <h3>Hello <?php echo $_SESSION['username']; ?>!</h3>
-    <p><a href="index.php?logout='1'">Log out</a></p>
+    <p>You are logged in!<a href="index.php?logout='1'">Log out</a></p>
 </div>
 <?php endif;?>
+            </div>
+        </header>
+<?php
+//if(isset($_SESSION['success'])) :?>
+
+<!-- <div class="success">
+    <h3><?php //echo $_SESSION['success'];
+//unset($_SESSION['success']); ?></h3>
+</div> -->
+<?php// endif;?>
+
 
 </header>

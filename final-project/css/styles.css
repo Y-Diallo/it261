@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body {
     background: rgb(208, 231, 224);
+    line-height: 1.5;
 }
 
 #wrapper {
@@ -14,21 +16,21 @@ body {
 }
 
 header {
-    background: rgb(90, 107, 90);
+    background: rgb(243, 250, 224);
     height: 200px;
     overflow: hidden;
 }
 
-.success {
+/* .success {
     float: left;
     padding: 10px;
     border: 1px solid blue;
-}
+} */
 
 .welcome-logout {
     float: right;
     padding: 10px;
-    border: 1px solid blue;
+    border: 1px solid black;
 }
 
 #wrapper {
@@ -194,30 +196,30 @@ aside {
     margin-top: 5px;
 }
 
-form {
+form .contactForm {
     width: 400px;
     margin: 30px;
 }
 
-.label {
+.contactForm .label {
     color: #333;
     margin-bottom: 5px;
     display: block;
 }
 
-ul label {
+.contactForm ul label {
     color: #333;
     margin-bottom: 5px;
     display: inline-block;
 }
 
-form ul {
+.contactForm form ul {
     margin-left: 10px;
     margin-bottom: 10px;
     list-style-type: none;
 }
 
-fieldset {
+.contactForm fieldset {
     padding: 8px;
 }
 
