@@ -1,9 +1,6 @@
 <?php
 
-session_start();
-
 include('config.php');
-// include('includes/header.php');
 
 
 $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
@@ -16,7 +13,7 @@ if(isset($_POST['reg_user'])){//something that represents being registered in
     $password_1 = mysqli_real_escape_string($iConn, $_POST['password_1']);
     $password_2 = mysqli_real_escape_string($iConn, $_POST['password_2']);
 
-
+    //errprs in an array
     if(empty($first_name)){//first name
         array_push($errors, 'Please fill out your first name!');
     }
@@ -72,7 +69,7 @@ if(isset($_POST['login_user'])){//something that represents being registered in
     $username = mysqli_real_escape_string($iConn, $_POST['username']);
     $password = mysqli_real_escape_string($iConn, $_POST['password']);
 
-
+    //errprs in an array
     if(empty($username)){//username
         array_push($errors, 'Please fill out your username!');
     }
