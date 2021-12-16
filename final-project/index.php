@@ -12,7 +12,7 @@
 ?>
 <div id="wrapper">
     <h1><?php echo $headline;?></h1>
-    <div id="hero">
+    <div id="content">
     <?php 
         echo random_pics($photos);
     ?>
