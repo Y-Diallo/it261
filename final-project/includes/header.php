@@ -1,6 +1,6 @@
 <?php 
 
-if(!isset($_SESSION['username'])){
+if(!isset($_SESSION['username'])){//remove to test html/css
     $_SESSION['msg'] = 'You must login first!';
     header('Location: login.php');
 }

@@ -3,16 +3,16 @@
 " method="POST">
     <fieldset>
         <span class="label">First Name</span>
-        <input type="text" name="first_name" value="<?php if(isset($_POST['first_name'])){ echo htmlspecialchars($_POST['first_name']);} ?>">
+        <input class="textInput"type="text" name="first_name" value="<?php if(isset($_POST['first_name'])){ echo htmlspecialchars($_POST['first_name']);} ?>">
         <span class="error"><?php echo $first_name_Err?></span>
         <span class="label">Last Name</span>
-        <input type="text" name="last_name" value="<?php if(isset($_POST['last_name'])){ echo htmlspecialchars($_POST['last_name']);} ?>">
+        <input class="textInput"type="text" name="last_name" value="<?php if(isset($_POST['last_name'])){ echo htmlspecialchars($_POST['last_name']);} ?>">
         <span class="error"><?php echo $last_name_Err?></span>
         <span class="label">Email</span>
-        <input type="text" name="email" value="<?php if(isset($_POST['email'])){ echo htmlspecialchars($_POST['email']);} ?>">
+        <input class="textInput"type="text" name="email" value="<?php if(isset($_POST['email'])){ echo htmlspecialchars($_POST['email']);} ?>">
         <span class="error"><?php echo $email_Err?></span>
         <span class="label">Phone Number</span>
-        <input type="text" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if(isset($_POST['phone'])){ echo htmlspecialchars($_POST['phone']);} ?>">
+        <input class="textInput"type="text" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if(isset($_POST['phone'])){ echo htmlspecialchars($_POST['phone']);} ?>">
         <span class="error"><?php echo $phone_Err?></span>
 
         <span class="label">Gender</span>
@@ -67,7 +67,7 @@
         <span class="error"><?php echo $colors_Err?></span>
 
         <span class="label">Comments</span>
-        <textarea name="comments"><?php if(isset($_POST['comments'])){ echo htmlspecialchars($_POST['comments']);} ?></textarea>
+        <textarea class="textInput" name="comments"><?php if(isset($_POST['comments'])){ echo htmlspecialchars($_POST['comments']);} ?></textarea>
         <span class="error"><?php echo $comments_Err?></span>
 
         <span class="label">Privacy</span>
