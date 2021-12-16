@@ -21,7 +21,7 @@
     
         case 'Tuesday' :
             $nestleWater = '<h2>Programmability!</h2>';
-            $pic = 'programmability.jpeg';
+            $pic = 'programmability.jpg';
             $alt = 'Programmability';
             $color ='#8d8';
             $content = 'Many nonmechanical keyboards can\'t be programmed—that is, you can\'t change the default behavior of certain keys to perform other actions—at all. You simply connect them to your computer and they do the normal keyboard stuff. But a good chunk of mechanical keyboards can be customized.';
@@ -29,7 +29,7 @@
     
         case 'Wednesday' :
             $nestleWater = '<h2>Removable cable!</h2>';
-            $pic = 'removable_cable.jpeg';
+            $pic = 'removable_cable.jpg';
             $alt = 'Removable cable';
             $color ='#dd8';
             $content = 'A removable USB cable is preferable to a built-in one, because if the cable breaks it\'s easier to replace just the cable rather than the whole keyboard.';
@@ -37,7 +37,7 @@
     
         case 'Thursday' :
             $nestleWater = '<h2>Backlight!</h2>';
-            $pic = 'backlight.jpeg';
+            $pic = 'backlight.jpg';
             $alt = 'Backlight';
             $color ='#8dd';
             $content = 'Backlighting can be a nice addition but it isn\'t a requirement for typing or coding. ';
