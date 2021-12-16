@@ -34,7 +34,7 @@ include('includes/header.php');
 <h1> Welcome to <?php echo $first_name;?>'s page!</h1>
 
 <?php if($feedback == ''){
-echo '<ul>';
+echo '<ul class="labels">';
 echo '<li><b>First Name: </b>'.$first_name.'</li>';
 echo '<li><b>Last Name: </b>'.$last_name.'</li>';
 echo '<li><b>Gamertag: </b>'.$gamertag.'</li>';

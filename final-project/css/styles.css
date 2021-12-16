@@ -30,7 +30,7 @@ header {
 .welcome-logout {
     float: right;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid blue;
 }
 
 #wrapper {
@@ -88,6 +88,7 @@ footer {
     line-height: 50px;
     border-top: 1px dotted #333;
     clear: both;
+    font-family: sans-serif;
 }
 
 footer ul {
@@ -111,7 +112,7 @@ footer li {
 
 #logo {
     float: left;
-    width: 180px;
+    width: 160px;
     margin-bottom: 20px;
 }
 
@@ -152,8 +153,9 @@ nav a {
 
 
 #image {
-    width: 100%;
-    float: right;
+    height: inherit;
+    display: block;
+    margin: 0 auto 20px auto;
 }
 
 .inset {
@@ -169,7 +171,6 @@ nav a {
 
 main {
     width: 61.7%;
-    height: 400px;
     background: lightblue;
     float: left;
     margin-bottom: 20px;
@@ -233,13 +234,18 @@ form .contactForm {
     margin: 0 auto 20px auto;
 }
 
-hr{
+.labels li {
+    margin: 0 20px;
+}
+
+hr {
     display: block;
-    margin-bottom: 20px;
+    margin: 0 20px 20px 20px;
+    border: 1px solid blue;
 }
 
 p {
-    margin-bottom: 20px;
+    margin: 0 30px;
     line-height: 1.35;
 }
 

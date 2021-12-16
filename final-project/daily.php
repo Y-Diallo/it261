@@ -66,7 +66,7 @@
 <div id="wrapper">
     
         <main>
-        <div class="inset" styles="background=<?php echo $color?>;">
+        <div class="inset" style="background=<?php echo $color?>;">
         <h1><?php echo $headline;?></h1>
         <?php echo $nestleWater;?>
         <p><?php echo $content;?></p>

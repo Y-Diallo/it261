@@ -16,7 +16,7 @@ $result = mysqli_query($iConn, $sql) or die(myError(__FILE__,__LINE__,mysqli_err
 if(mysqli_num_rows($result) > 0){
     while($row = mysqli_fetch_assoc($result)){
         echo '<h3> For more information about '.$row['gamertag'].', please click <a href="project-view.php?id='.$row['id'].'">here!</a></h3>';
-        echo '<ul>';
+        echo '<ul class="labels">';
         echo '<li>Name: '.$row['first_name'].' '.$row['last_name'].'</li>';
         echo '<li></li>';
         echo '<li>Gamer Tag: '.$row['gamertag'].'</li>';
