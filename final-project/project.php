@@ -5,9 +5,9 @@
 <div id="wrapper">
     <main class = "container">
     <h1><?php echo $headline;?></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+    <p>Mechanical keyboard switches are the core components of a mechanical keyboard. These unique little devices are the main contributors to the tactile and clicky experience. But there are numerous types of keyboard switches with different names and features.</p>
     <?php
-$sql = 'SELECT * FROM streamers';
+$sql = 'SELECT * FROM switches';
 $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
 $result = mysqli_query($iConn, $sql) or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
@@ -15,11 +15,11 @@ $result = mysqli_query($iConn, $sql) or die(myError(__FILE__,__LINE__,mysqli_err
 
 if(mysqli_num_rows($result) > 0){
     while($row = mysqli_fetch_assoc($result)){
-        echo '<h3> For more information about '.$row['gamertag'].', please click <a href="project-view.php?id='.$row['id'].'">here!</a></h3>';
+        echo '<h3> For more information about '.$row['name'].', please click <a href="project-view.php?id='.$row['id'].'">here!</a></h3>';
         echo '<ul class="labels">';
-        echo '<li>Name: '.$row['first_name'].' '.$row['last_name'].'</li>';
+        echo '<li>Name: '.$row['name'].' '.$row['type'].'</li>';
         echo '<li></li>';
-        echo '<li>Gamer Tag: '.$row['gamertag'].'</li>';
+        echo '<li>Type: '.$row['type'].'</li>';
         echo '</ul>';
         echo '<hr>';
     }
@@ -34,7 +34,7 @@ mysqli_close($iConn);
 
     <aside class="container">
     <h3>Our Aside for our Project</h3>
-    <img id="image" src="images/project.png" alt="youtube logo"><!--picture related to form-->
+    <img id="image" src="images/blue-switch.webp" alt="switch"><!--picture related to form-->
     </aside>
 <?php 
 include('includes/footer.php');
