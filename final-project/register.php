@@ -1,6 +1,6 @@
 <?php
 include('server.php');
-include('includes/header.php');
+include('includes/header-form.php');
 ?>
 <div id="wrapper">
 <h1> Register Today!</h1>
