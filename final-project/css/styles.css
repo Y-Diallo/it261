@@ -190,7 +190,7 @@ main {
 aside {
     width: 36.17%;
     float: right;
-    height: 300px;
+    height: fit-content;
     background: lightgoldenrodyellow;
     margin-bottom: 10px;
 }
