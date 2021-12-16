@@ -11,60 +11,60 @@
         <span class="label">Email</span>
         <input class="textInput"type="text" name="email" value="<?php if(isset($_POST['email'])){ echo htmlspecialchars($_POST['email']);} ?>">
         <span class="error"><?php echo $email_Err?></span>
-        <span class="label">Phone Number</span>
+        <span class="label">Phone Number (Make sure to follow the format!)</span>
         <input class="textInput"type="text" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if(isset($_POST['phone'])){ echo htmlspecialchars($_POST['phone']);} ?>">
         <span class="error"><?php echo $phone_Err?></span>
 
-        <span class="label">Gender</span>
+        <span class="label">How often do you want to hear from us?</span>
         <ul>
-            <li><input type="radio" id="male" name="gender" value="male"
-            <?php if(isset($_POST['gender']) && $_POST['gender'] == 'male'){ echo 'checked="checked"';}?>><label for="male">Male</label></li>
-            <li><input type="radio" id="female" name="gender" value="female"
-            <?php if(isset($_POST['gender']) && $_POST['gender'] == 'female'){ echo 'checked="checked"';}?>><label for="female">Female</label></li>
-            <li><input type="radio" id="other" name="gender" value="other"
-            <?php if(isset($_POST['gender']) && $_POST['gender'] == 'other'){ echo 'checked="checked"';}?>><label for="other">Other</label></li>
+            <li><input type="radio" id="weekly" name="communication" value="weekly"
+            <?php if(isset($_POST['communication']) && $_POST['communication'] == 'weekly'){ echo 'checked="checked"';}?>><label for="weekly">Weekly</label></li>
+            <li><input type="radio" id="bi-weekly" name="communication" value="bi-weekly"
+            <?php if(isset($_POST['communication']) && $_POST['communication'] == 'bi-weekly'){ echo 'checked="checked"';}?>><label for="bi-weekly">Bi-Weekly</label></li>
+            <li><input type="radio" id="other" name="communication" value="other"
+            <?php if(isset($_POST['communication']) && $_POST['communication'] == 'other'){ echo 'checked="checked"';}?>><label for="other">Other</label></li>
         </ul>
-        <span class="error"><?php echo $gender_Err?></span>
+        <span class="error"><?php echo $communication_Err?></span>
 
-        <span class="label">Favorite Tasks</span>
+        <span class="label">Favorite Perks</span>
         <ul>
-            <li><input type="checkbox" id="admin" name="tasks[]" value="admin"
-            <?php if(isset($_POST['tasks']) && in_array('admin',$tasks)){ echo 'checked="checked"';}?>><label for="admin">Admin</label></li>
-            <li><input type="checkbox" id="electrical" name="tasks[]" value="electrical"
-            <?php if(isset($_POST['tasks']) && in_array('electrical',$tasks)){ echo 'checked="checked"';}?>><label for="electrical">Electrical</label></li>
-            <li><input type="checkbox" id="medbay" name="tasks[]" value="medbay"
-            <?php if(isset($_POST['tasks']) && in_array('medbay',$tasks)){ echo 'checked="checked"';}?>><label for="medbay">MedBay</label></li>
-            <li><input type="checkbox" id="oxygen" name="tasks[]" value="oxygen"
-            <?php if(isset($_POST['tasks']) && in_array('oxygen',$tasks)){ echo 'checked="checked"';}?>><label for="oxygen">O2</label></li>
-            <li><input type="checkbox" id="engine" name="tasks[]" value="engine"
-            <?php if(isset($_POST['tasks']) && in_array('engine',$tasks)){ echo 'checked="checked"';}?>><label for="engine">Engine</label></li>
+            <li><input type="checkbox" id="Build_quality" name="perks[]" value="Build_quality"
+            <?php if(isset($_POST['perks']) && in_array('Build_quality',$perks)){ echo 'checked="checked"';}?>><label for="Build_quality">Build quality</label></li>
+            <li><input type="checkbox" id="Keycaps" name="perks[]" value="Keycaps"
+            <?php if(isset($_POST['perks']) && in_array('Keycaps',$perks)){ echo 'checked="checked"';}?>><label for="Keycaps">Keycaps</label></li>
+            <li><input type="checkbox" id="Programmability" name="perks[]" value="Programmability"
+            <?php if(isset($_POST['perks']) && in_array('Programmability',$perks)){ echo 'checked="checked"';}?>><label for="Programmability">Programmability</label></li>
+            <li><input type="checkbox" id="Removable_cable" name="perks[]" value="Removable_cable"
+            <?php if(isset($_POST['perks']) && in_array('Removable_cable',$perks)){ echo 'checked="checked"';}?>><label for="Removable_cable">Removable cable</label></li>
+            <li><input type="checkbox" id="Backlight" name="perks[]" value="Backlight"
+            <?php if(isset($_POST['perks']) && in_array('Backlight',$perks)){ echo 'checked="checked"';}?>><label for="Backlight">Backlight</label></li>
         </ul>
-        <span class="error"><?php echo $tasks_Err?></span>
+        <span class="error"><?php echo $perks_Err?></span>
 
-        <span class="label">Among Us Color</span>
-        <select name="colors">
+        <span class="label">Favorite Switch Type</span>
+        <select name="switchtype">
             <option value="" 
-            <?php if(isset($_POST['colors']) && $_POST['colors'] == NULL){ echo 'selected="unselected"';}?>>Select one!</option>
-            <option value="red" 
-            <?php if(isset($_POST['colors']) && $_POST['colors'] == 'red'){ echo 'selected="selected"';}?>
-            >Red</option>
-            <option value="ble" 
-            <?php if(isset($_POST['colors']) && $_POST['colors'] == 'ble'){ echo 'selected="selected"';}?>
+            <?php if(isset($_POST['switchtype']) && $_POST['switchtype'] == NULL){ echo 'selected="unselected"';}?>>Select one!</option>
+            <option value="Blue" 
+            <?php if(isset($_POST['switchtype']) && $_POST['switchtype'] == 'Blue'){ echo 'selected="selected"';}?>
             >Blue</option>
-            <option value="grn" 
-            <?php if(isset($_POST['colors']) && $_POST['colors'] == 'grn'){ echo 'selected="selected"';}?>
+            <option value="Green" 
+            <?php if(isset($_POST['switchtype']) && $_POST['switchtype'] == 'Green'){ echo 'selected="selected"';}?>
             >Green</option>
-            <option value="pik" 
-            <?php if(isset($_POST['colors']) && $_POST['colors'] == 'pik'){ echo 'selected="selected"';}?>
-            >Pink</option>
-            <option value="whe" 
-            <?php if(isset($_POST['colors']) && $_POST['colors'] == 'whe'){ echo 'selected="selected"';}?>
+            <option value="White" 
+            <?php if(isset($_POST['switchtype']) && $_POST['switchtype'] == 'White'){ echo 'selected="selected"';}?>
             >White</option>
-            <option value="blk" 
-            <?php if(isset($_POST['colors']) && $_POST['colors'] == 'blk'){ echo 'selected="selected"';}?>
+            <option value="Red" 
+            <?php if(isset($_POST['switchtype']) && $_POST['switchtype'] == 'Red'){ echo 'selected="selected"';}?>
+            >Red</option>
+            <option value="Black" 
+            <?php if(isset($_POST['switchtype']) && $_POST['switchtype'] == 'Black'){ echo 'selected="selected"';}?>
             >Black</option>
+            <option value="Brown" 
+            <?php if(isset($_POST['switchtype']) && $_POST['switchtype'] == 'Brown'){ echo 'selected="selected"';}?>
+            >Brown</option>
         </select>
-        <span class="error"><?php echo $colors_Err?></span>
+        <span class="error"><?php echo $switchtype_Err?></span>
 
         <span class="label">Comments</span>
         <textarea class="textInput" name="comments"><?php if(isset($_POST['comments'])){ echo htmlspecialchars($_POST['comments']);} ?></textarea>

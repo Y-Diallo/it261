@@ -83,10 +83,10 @@ if(isset($_GET['today'])){
 //emailable form php!
     $first_name = '';
     $last_name = '';
-    $gender = '';
+    $communication = '';
     $email = '';
-    $tasks[] = '';
-    $colors = '';
+    $perks[] = '';
+    $switchtype = '';
     $comments = '';
     $privacy = '';
     $phone = '';
@@ -94,10 +94,10 @@ if(isset($_GET['today'])){
     //errors not in an array
     $first_name_Err = '';
     $last_name_Err = '';
-    $gender_Err = '';
+    $communication_Err = '';
     $email_Err = '';
-    $tasks_Err = '';
-    $colors_Err = '';
+    $perks_Err = '';
+    $switchtype_Err = '';
     $comments_Err = '';
     $privacy_Err = '';
     $phone_Err = '';
@@ -115,25 +115,25 @@ if(isset($_GET['today'])){
         }else {
             $last_name = $_POST['last_name'];
         }
-        if(empty($_POST['gender'])){//gender
-            $gender_Err = 'Please fill out your gender!';
+        if(empty($_POST['communication'])){//communication
+            $communication_Err = 'Please fill out your communication!';
         }else {
-            $gender = $_POST['gender'];
+            $communication = $_POST['communication'];
         }
         if(empty($_POST['email'])){//email
             $email_Err = 'Please fill out your email!';
         }else {
             $email = $_POST['email'];
         }
-        if(empty(implode($_POST['tasks']))){//tasks
-            $tasks_Err = 'Please select your task(s)!';
+        if(empty(implode($_POST['perks']))){//perks
+            $perks_Err = 'Please select your task(s)!';
         }else {
-            $tasks = $_POST['tasks'];
+            $perks = $_POST['perks'];
         }
-        if($_POST['colors'] == NULL){//colors
-            $colors_Err = 'Please select your color!';
+        if($_POST['switchtype'] == NULL){//switchtype
+            $switchtype_Err = 'Please select your color!';
         }else {
-            $colors = $_POST['colors'];
+            $switchtype = $_POST['switchtype'];
         }
         if(empty($_POST['comments'])){//comments
             $comments_Err = 'Please fill out your comments!';
@@ -156,26 +156,27 @@ if(isset($_GET['today'])){
             }
         }
 
-        function my_tasks(){
+        function my_perks(){
             $my_return ='';
-            if(!empty($_POST['tasks'])){
-                $my_return = implode(', ',$_POST['tasks']);
+            if(!empty($_POST['perks'])){
+                $my_return = implode(', ',$_POST['perks']);
+                $my_return = str_replace('_', ' ', $my_return);
             }
             return $my_return;
         }
 
-        if(isset($_POST['first_name'],$_POST['last_name'],$_POST['gender'],
-        $_POST['email'],$_POST['tasks'],$_POST['colors'],$_POST['comments'],$_POST['privacy'],$_POST['phone'])){
+        if(isset($_POST['first_name'],$_POST['last_name'],$_POST['communication'],
+        $_POST['email'],$_POST['perks'],$_POST['switchtype'],$_POST['comments'],$_POST['privacy'],$_POST['phone'])){
             $to ='fandy107@gmail.com';//szemeo@mystudentswa.com
             $subject = 'Test Email';
             $body = '
             The first name is: '.$first_name.' '.PHP_EOL.'
             The last name is: '.$last_name.' '.PHP_EOL.'
-            Gender: '.$gender.' '.PHP_EOL.'
             Email: '.$email.' '.PHP_EOL.'
             Phone: '.$phone.' '.PHP_EOL.'
-            Among Us Color: '.$colors.' '.PHP_EOL.'
-            Tasks: '.my_tasks().' '.PHP_EOL.'
+            Favorite Switchtype: '.$switchtype.' '.PHP_EOL.'
+            perks: '.my_perks().' '.PHP_EOL.'
+            Communication: '.$communication.' '.PHP_EOL.'
             Comments: '.$comments.' '.PHP_EOL.'
             ';
 

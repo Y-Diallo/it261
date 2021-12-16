@@ -13,7 +13,7 @@
     </main>
 
     <aside>
-    <h3>Our Aside for our Form</h3>
+    <h3>Keybooarddzz!</h3>
     <img id="image" src="images/form.jpg" alt="keyboard"><!--picture related to form-->
     <p></p><!--aside text-->
     </aside>
