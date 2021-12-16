@@ -46,7 +46,7 @@ switch(THIS_PAGE){
     case 'about.php':
         $title = 'About Page';
         $body = 'aboutBox';
-        $headline = 'Welcome to our About Page';
+        $headline = 'Database: Welcome to our About Page';
         break;
     case 'daily.php':
         $title = 'Daily Page';

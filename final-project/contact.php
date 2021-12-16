@@ -14,7 +14,8 @@
 
     <aside>
     <h3>Our Aside for our Form</h3>
-    <img src="images/form.png" alt="among us character"><!--picture related to form-->
+    <img id="image" src="images/form.png" alt="among us character"><!--picture related to form-->
+    <p></p><!--aside text-->
     </aside>
 <?php 
 include('includes/footer.php');
