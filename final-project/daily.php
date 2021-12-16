@@ -4,59 +4,59 @@
 
     switch($today) {
         case 'Sunday' :
-            $nestleWater = '<h2>Sunday is Arrowhead Day!</h2>';
-            $pic = 'arrowhead.jpeg';
-            $alt = 'Arrowhead';
+            $nestleWater = '<h2>Build quality!</h2>';
+            $pic = 'build_quality.jpg';
+            $alt = 'Build quality';
             $color ='#d88';
-            $content = 'At <b>Arrowhead®</b> Mountain Spring Water, we source our water from naturally occurring mountain springs in California, Colorado and Canada for communities in and west of the Rockies. From the way we source our water to the recycled plastic in our bottles, we believe there are a lot of things that put us a sip above the rest.';
+            $content = 'Cheap keyboards with plastic cases and backplates feel and sound hollow when you type and can flex when you press too hard on them. A sturdier keyboard made of metal or other higher-quality materials won\'t do that.';
             break;
     
         case 'Monday' :
-            $nestleWater = '<h2>Monday is Poland Spring Day!</h2>';
-            $pic = 'polandSpring.jpeg';
-            $alt = 'Poland Spring';
+            $nestleWater = '<h2>Keycaps!</h2>';
+            $pic = 'keycaps.png';
+            $alt = 'Keycaps';
             $color ='#88d';
-            $content = 'A lot has changed since we got our start in 1845, but at least one thing remains the same: <b>Poland Spring®</b> Brand 100% Natural Spring Water is still sourced from our carefully selected springs in Maine.';
+            $content = 'Many keyboards come with ABS keycaps, a lightweight type of plastic that\'s more prone to wear and can become smooth and shiny with heavy use. Keycaps made of PBT tend to be more durable and have a grittier texture.';
             break;
     
         case 'Tuesday' :
-            $nestleWater = '<h2>Tuesday is Ozarka Day!</h2>';
-            $pic = 'ozarka.jpeg';
-            $alt = 'Ozarka';
+            $nestleWater = '<h2>Programmability!</h2>';
+            $pic = 'programmability.jpeg';
+            $alt = 'Programmability';
             $color ='#8d8';
-            $content = '<b>Ozarka®</b> Brand Natural Spring Water comes from three springs found right here in Texas. That\'s what gives it that fresh Texas taste that\'ll make you feel right at home.';
+            $content = 'Many nonmechanical keyboards can\'t be programmed—that is, you can\'t change the default behavior of certain keys to perform other actions—at all. You simply connect them to your computer and they do the normal keyboard stuff. But a good chunk of mechanical keyboards can be customized.';
             break;
     
         case 'Wednesday' :
-            $nestleWater = '<h2>Wednesday is Ice Mountain Day!</h2>';
-            $pic = 'iceMountain.jpeg';
-            $alt = 'Ice Mountain';
+            $nestleWater = '<h2>Removable cable!</h2>';
+            $pic = 'removable_cable.jpeg';
+            $alt = 'Removable cable';
             $color ='#dd8';
-            $content = 'Greatness is everywhere in the Midwest. This part of the country has vibrant cities, a sweet music scene, lakes for days and some of the nicest people around. Speaking of nice people, Midwesterners have been enjoying <b>Ice Mountain®</b> Brand 100% Natural Spring Water for many years. Where does our refreshing taste come from? It all starts at our springs.';
+            $content = 'A removable USB cable is preferable to a built-in one, because if the cable breaks it\'s easier to replace just the cable rather than the whole keyboard.';
             break;
     
         case 'Thursday' :
-            $nestleWater = '<h2>Thursday is Deer Park Day!</h2>';
-            $pic = 'deerPark.jpeg';
-            $alt = 'Deer Park';
+            $nestleWater = '<h2>Backlight!</h2>';
+            $pic = 'backlight.jpeg';
+            $alt = 'Backlight';
             $color ='#8dd';
-            $content = '<b>Deer Park®</b> Brand 100% Natural Spring Water is sourced from springs across the region: from the heart of Pennsylvania to the panhandle of Maryland to the northern border of South Carolina — and beyond. The crisp, clean taste is natural refreshment at its finest.';
+            $content = 'Backlighting can be a nice addition but it isn\'t a requirement for typing or coding. ';
             break;
     
         case 'Friday' :
-            $nestleWater = '<h2>Friday is Zephyrhills Day!</h2>';
-            $pic = 'zephyrhills.jpg';
-            $alt = 'Zephyrhills';
+            $nestleWater = '<h2>Hot-swap switches!</h2>';
+            $pic = 'hotswap_switches.webp';
+            $alt = 'Hot-swap switches';
             $color ='#d8d';
-            $content = 'In Florida, you\'ll find miles of oceanfront, 12 months of sunshine and some of the friendliest people you\'ve ever met. But our best-kept secrets are the springs that give us the fresh-tasting <b>Zephyrhills®</b> Brand Natural Spring Water that folks from Florida are lucky enough to enjoy.';
+            $content = 'Swapping out switches on most mechanical keyboards requires the equipment, expertise, and time to desolder the existing switches and solder in new ones. On a hot-swappable board, you can simply pull the switches out and snap new ones into place.';
             break;
     
         case 'Saturday' :
-            $nestleWater = '<h2>Saturday is Nestle Pure Life Day!</h2>';
-            $pic = 'nestlePureLife.jpeg';
-            $alt = 'Nestle Pure Life';
+            $nestleWater = '<h2>Customizable!</h2>';
+            $pic = 'customizable.jpeg';
+            $alt = 'Customizable';
             $color ='#ddd';
-            $content = '<b>Nestlé® Pure Life®</b> puts great tasting bottled drinking water in easy reach of your family using a rigorous quality process. That’s how we can make sure it meets our high safety standards, and tastes great too.';
+            $content = 'Mechanical keyboards have individual switches beneath each key, which makes this style of keyboard more durable, easier to repair, and more customizable than membrane, scissor, or butterfly keyboards—as well as more comfortable in many cases. Mechanical switches come in three main varieties: linear, tactile, and clicky.';
             break;
     
         case '':
@@ -77,16 +77,16 @@
 
     <aside>
     <img id="image" src="images/<?php echo $pic; ?>" alt="<?php echo $alt; ?>">
-    <h2>Check out our Daily Specials</h2>
+    <h2>Explore Why Mechanical Keyboards are better!</h2>
 
         <ul>
-        <li><a href="daily.php?today=Sunday">Sunday</a></li>
-        <li><a href="daily.php?today=Monday">Monday</a></li>
-        <li><a href="daily.php?today=Tuesday">Tuesday</a></li>
-        <li><a href="daily.php?today=Wednesday">Wednesday</a></li>
-        <li><a href="daily.php?today=Thursday">Thursday</a></li>
-        <li><a href="daily.php?today=Friday">Friday</a></li>
-        <li><a href="daily.php?today=Saturday">Saturday</a></li>
+        <li><a href="daily.php?today=Sunday">Build quality</a></li>
+        <li><a href="daily.php?today=Monday">Keycaps</a></li>
+        <li><a href="daily.php?today=Tuesday">Programmability</a></li>
+        <li><a href="daily.php?today=Wednesday">Removable cable</a></li>
+        <li><a href="daily.php?today=Thursday">Backlight</a></li>
+        <li><a href="daily.php?today=Friday">Hot-swap switches</a></li>
+        <li><a href="daily.php?today=Saturday">Customizable</a></li>
         </ul>
     </aside>
 <?php 

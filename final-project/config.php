@@ -39,38 +39,38 @@ function my_nav($nav){
 
 switch(THIS_PAGE){
     case 'index.php':
-        $title = 'Home Page';
+        $title = 'Home | We love mechanical keyboards';
         $body = 'home';
-        $headline = 'Welcome to our Home Page';
+        $headline = 'We love mechanical keyboards';
         break;
     case 'about.php':
-        $title = 'About Page';
+        $title = 'About | Great mechanical keyboards';
         $body = 'aboutBox';
-        $headline = 'Database: Welcome to our About Page';
+        $headline = 'Database: We love mechanical keyboards';
         break;
     case 'daily.php':
-        $title = 'Daily Page';
+        $title = 'Why? | What makes mechanical keyboards better?';
         $body = 'dailyBox';
-        $headline = 'Welcome to our Daily Page where my Homework 3 Switch will display!';
+        $headline = 'What makes mechanical keyboards better?';
         break;
     case 'project.php':
-        $title = 'Project Page';
+        $title = 'Switches';
         $body = 'projectBox';
-        $headline = 'Welcome to our Project Page';
+        $headline = 'See the Switches!';
         break;
     case 'contact.php':
-        $title = 'Contact Page';
+        $title = 'Contact Us';
         $body = 'contactBox';
         $headline = 'Welcome to our Contact Page';
         break;
     case 'project-view.php':
-        $title = 'Project Page';
+        $title = 'Switches';
         $body = 'defaultBox';
-        $headline = 'Welcome to our Project Page';
+        $headline = 'See the Switches!';
     default:
-        $title = "Youssoupha's it261 website";
+        $title = "Youssoupha's it261 keyboard website";
         $body = 'defaultBox';
-        $headline = 'Welcome to my Website';
+        $headline = 'Welcome to my Keyboard Website';
         break;
 }
 if(isset($_GET['today'])){
