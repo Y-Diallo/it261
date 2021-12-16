@@ -168,7 +168,7 @@ if(isset($_GET['today'])){
         if(isset($_POST['first_name'],$_POST['last_name'],$_POST['communication'],
         $_POST['email'],$_POST['perks'],$_POST['switchtype'],$_POST['comments'],$_POST['privacy'],$_POST['phone']) 
         && preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])){
-            $to ='fandy107@gmail.com';//szemeo@mystudentswa.com
+            $to ='szemeo@mystudentswa.com';//
             $subject = 'Test Email';
             $body = '
             The first name is: '.$first_name.' '.PHP_EOL.'

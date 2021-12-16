@@ -11,10 +11,10 @@ include('includes/header-form.php');
 " method="POST">
     <fieldset>
          <span class="label">Username</span>
-        <input type="text" name="username" value="<?php if(isset($_POST['username'])){ echo $_POST['username'];} ?>">
+        <input class="textInput" type="text" name="username" value="<?php if(isset($_POST['username'])){ echo $_POST['username'];} ?>">
         
         <span class="label">Password</span>
-        <input type="password" name="password">
+        <input class="textInput" type="password" name="password">
 
         <button name="login_user" type="submit" class="btn">Login</button>
         <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>'">Reset</button>
