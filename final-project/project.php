@@ -15,9 +15,9 @@ $result = mysqli_query($iConn, $sql) or die(myError(__FILE__,__LINE__,mysqli_err
 
 if(mysqli_num_rows($result) > 0){
     while($row = mysqli_fetch_assoc($result)){
-        echo '<h3> For more information about '.$row['name'].', please click <a href="project-view.php?id='.$row['id'].'">here!</a></h3>';
+        echo '<h3> For more information about '.$row['name'].'s, please click <a href="project-view.php?id='.$row['id'].'">here!</a></h3>';
         echo '<ul class="labels">';
-        echo '<li>Name: '.$row['name'].' '.$row['type'].'</li>';
+        echo '<li>Name: '.$row['name'].'</li>';
         echo '<li></li>';
         echo '<li>Type: '.$row['type'].'</li>';
         echo '</ul>';
@@ -33,8 +33,8 @@ mysqli_close($iConn);
     </main>
 
     <aside class="container">
-    <h3>Our Aside for our Project</h3>
-    <img id="image" src="images/blue-switch.webp" alt="switch"><!--picture related to form-->
+    <h3>So many switches!</h3>
+    <img id="image" src="images/project1.webp" alt="switch"><!--picture related to form-->
     </aside>
 <?php 
 include('includes/footer.php');
