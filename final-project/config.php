@@ -22,7 +22,6 @@ $nav['about.php'] = 'About';
 $nav['daily.php'] = 'Daily';
 $nav['project.php'] = 'Project';
 $nav['contact.php'] = 'Contact';
-$nav['gallery.php'] = 'Gallery';
 
 //nav function
 
@@ -63,11 +62,6 @@ switch(THIS_PAGE){
         $title = 'Contact Page';
         $body = 'contactBox';
         $headline = 'Welcome to our Contact Page';
-        break;
-    case 'gallery.php':
-        $title = 'Gallery Page';
-        $body = 'galleryBox';
-        $headline = 'Welcome to our Gallery Page';
         break;
     case 'project-view.php':
         $title = 'Project Page';
