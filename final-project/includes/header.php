@@ -1,9 +1,9 @@
 <?php 
 
-// if(!isset($_SESSION['username'])){
-//     $_SESSION['msg'] = 'You must login first!';
-//     header('Location: login.php');
-// }
+if(!isset($_SESSION['username'])){
+    $_SESSION['msg'] = 'You must login first!';
+    header('Location: login.php');
+}
 if(isset($_GET['logout'])){
     session_destroy();
     unset($_SESSION['username']);
