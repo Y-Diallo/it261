@@ -19,8 +19,8 @@ define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
 $nav['index.php'] = 'Home';
 $nav['about.php'] = 'About';
-$nav['daily.php'] = 'Daily';
-$nav['project.php'] = 'Project';
+$nav['daily.php'] = 'Why?';
+$nav['project.php'] = 'Switches';
 $nav['contact.php'] = 'Contact';
 
 //nav function
@@ -61,7 +61,7 @@ switch(THIS_PAGE){
     case 'contact.php':
         $title = 'Contact Us';
         $body = 'contactBox';
-        $headline = 'Welcome to our Contact Page';
+        $headline = 'Contact Us';
         break;
     case 'project-view.php':
         $title = 'Switches';
