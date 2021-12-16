@@ -18,21 +18,8 @@
     </div>
     <main>
     <h1><?php echo $headline;?></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <pre>
-    <br>
-    function random_pics($photos){
-        $i = rand(0,(count($photos)-1));
-        $selected_image = ''.$photos[$i].'.jpg';
-        echo '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
-    }
-    </pre>    
+    <p>Mechanical keyboards are the keyboards that most people picture when they think about keyboards; they're the classic-looking, sturdy keyboards from the 1980s. A more proper definition is that mechanical keyboards are made with high-quality plastic key switches underneath each of the keycaps.</p>  
     </main>
-
-    <aside>
-
-
-    </aside>
 <?php 
 include('includes/footer.php');
 ?>

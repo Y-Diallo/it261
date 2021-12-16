@@ -191,7 +191,7 @@ if(isset($_GET['today'])){
 // random images
 function random_pics($photos){
     $i = rand(0,(count($photos)-1));
-    $selected_image = ''.$photos[$i].'.jpg';
+    $selected_image = ''.$photos[$i].'.png';
     echo '<img id="image" src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
 }
 
